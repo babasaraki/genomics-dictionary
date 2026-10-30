@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Read mapping · The Genomics Dictionary</title>
+<meta name="description" content="Read mapping is the process of finding, for each short sequencing read, the place in a reference genome it most likely came from. Millions of reads are placed in this way, producing a pile of overlapping reads at every covered position. Everything that follows, including variant calling and expressi">
+<meta property="og:title" content="Read mapping · The Genomics Dictionary">
+<meta property="og:description" content="Read mapping is the process of finding, for each short sequencing read, the place in a reference genome it most likely came from. Millions of reads are placed in this way, producing a pile of overlapping reads at every covered position. Everything that follows, including variant calling and expressi">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/read-mapping/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Read mapping", "description": "Read mapping is the process of finding, for each short sequencing read, the place in a reference genome it most likely came from. Millions of reads are placed in this way, producing a pile of overlapping reads at every covered position. Everything that follows, including variant calling and expression counting, depends on those placements being broadly correct.", "identifier": "GD-0151", "url": "https://babasaraki.github.io/genomics-dictionary/terms/read-mapping/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Read mapping</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Read mapping is the process of finding, for each short sequencing read, the place in a reference genome it most likely came from. Millions of reads are placed in this way, producing a pile of overlapping reads at every covered position. Everything that follows, including variant calling and expression counting, depends on those placements being broadly correct.</p>
+
+        <h2>Technical explanation</h2>
+        <p>Mappers index the reference once, typically using the Burrows-Wheeler transform or a hash of short seeds, then for each read find candidate positions and extend them into a full alignment. Paired-end information constrains placement, because the two mates should map in the expected orientation and at a plausible distance. Each alignment receives a mapping quality representing the probability that the placement is wrong, which falls to zero where several locations score equally. Spliced aligners are required for RNA, since reads cross exon junctions and must be allowed to skip introns. Mapping is fast and scales well, but it is biased towards the reference: reads carrying large insertions, highly divergent haplotypes or sequence absent from the reference map poorly or not at all, which systematically reduces sensitivity for samples whose ancestry is less well represented in the reference. Graph and pangenome references are being adopted to reduce this bias. Duplicate reads arising from library amplification are usually marked after mapping so that they do not count as independent observations.</p>
+
+        <h2>Practical example</h2>
+        <p>A team sequencing isolates for a resistance survey finds that one gene appears absent in several samples. Inspection shows the reads are present but unmapped, because the reference strain lacks the plasmid carrying the gene. Assembling the unmapped reads recovers the sequence, and the pipeline is changed to screen assemblies rather than relying on mapping alone.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Unmapped reads are often treated as waste. They are frequently the most informative part of a dataset: they can hold sequence genuinely absent from the reference, contamination, adapter-only fragments or a co-infecting organism. Discarding them without inspection can mean missing a plasmid, an insertion or an unexpected pathogen entirely.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/sequence-alignment/">Sequence alignment</a></li><li><a href="../../terms/sam-bam-format/">SAM and BAM formats</a></li><li><a href="../../terms/read-depth/">Read depth</a></li><li><a href="../../terms/reference-genome/">Reference genome</a></li><li><a href="../../terms/pangenome/">Pangenome</a></li><li><a href="../../terms/variant-calling/">Variant calling</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Fast and accurate short read alignment with Burrows–Wheeler transform. <em>Bioinformatics</em>. 2009. doi:10.1093/bioinformatics/btp324 <a href="https://doi.org/10.1093/bioinformatics/btp324" rel="noopener">https://doi.org/10.1093/bioinformatics/btp324</a></li><li>Fast gapped-read alignment with Bowtie 2. <em>Nature Methods</em>. 2012. doi:10.1038/nmeth.1923 <a href="https://doi.org/10.1038/nmeth.1923" rel="noopener">https://doi.org/10.1038/nmeth.1923</a></li><li>Graph-based genome alignment and genotyping with HISAT2 and HISAT-genotype. <em>Nature Biotechnology</em>. 2019. doi:10.1038/s41587-019-0201-4 <a href="https://doi.org/10.1038/s41587-019-0201-4" rel="noopener">https://doi.org/10.1038/s41587-019-0201-4</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0151</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Read mapping. The Genomics Dictionary. Entry GD-0151, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/read-mapping/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=read-mapping&amp;entry_id=GD-0151&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

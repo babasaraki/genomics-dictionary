@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sequence alignment · The Genomics Dictionary</title>
+<meta name="description" content="Sequence alignment is the arrangement of two or more sequences so that corresponding positions sit beneath one another, with gaps inserted where one sequence has material the other lacks. It is the basic operation for comparing sequences, and the resulting pattern of matches, mismatches and gaps is ">
+<meta property="og:title" content="Sequence alignment · The Genomics Dictionary">
+<meta property="og:description" content="Sequence alignment is the arrangement of two or more sequences so that corresponding positions sit beneath one another, with gaps inserted where one sequence has material the other lacks. It is the basic operation for comparing sequences, and the resulting pattern of matches, mismatches and gaps is ">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/sequence-alignment/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Sequence alignment", "description": "Sequence alignment is the arrangement of two or more sequences so that corresponding positions sit beneath one another, with gaps inserted where one sequence has material the other lacks. It is the basic operation for comparing sequences, and the resulting pattern of matches, mismatches and gaps is the evidence used to infer relatedness, detect variants or identify an unknown sequence.", "identifier": "GD-0150", "url": "https://babasaraki.github.io/genomics-dictionary/terms/sequence-alignment/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Sequence alignment</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Sequence alignment is the arrangement of two or more sequences so that corresponding positions sit beneath one another, with gaps inserted where one sequence has material the other lacks. It is the basic operation for comparing sequences, and the resulting pattern of matches, mismatches and gaps is the evidence used to infer relatedness, detect variants or identify an unknown sequence.</p>
+
+        <h2>Technical explanation</h2>
+        <p>Alignment algorithms optimise a score built from substitution rewards and penalties and gap penalties. Global alignment, in the Needleman-Wunsch sense, aligns sequences end to end and suits comparison of complete, similar sequences; local alignment, in the Smith-Waterman sense, finds the best-scoring subregion and suits searching a short query against a large database. Exact dynamic programming is quadratic in sequence length, so practical tools use heuristics: seed-and-extend searching, suffix arrays or the Burrows-Wheeler transform for read mapping, and anchor-based chaining for whole-genome comparison. Multiple sequence alignment extends the problem to many sequences at once and is normally approximated progressively, because the exact solution is computationally intractable; the resulting alignment is the input to phylogenetic inference, so alignment error propagates directly into tree topology. The central limitation is that an alignment is a hypothesis about homology, not an observation of it. Repetitive sequence, large insertions, rearrangements and divergent regions admit several nearly equal-scoring arrangements, and the one reported depends on the scoring parameters chosen.</p>
+
+        <h2>Practical example</h2>
+        <p>A surveillance team aligns the genomes of an outbreak cluster before building a phylogeny. A region near the end of each genome contains long gaps where coverage was poor, and these gap-rich columns inflate apparent differences between samples. The team masks the unreliable positions from the alignment and rebuilds the tree, which then resolves the cluster sensibly.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>An alignment is often taken as a fact about the sequences rather than a result produced by a chosen algorithm and parameters. Change the gap penalty or the substitution model and the arrangement of an indel-rich region can change too. Where downstream conclusions depend on a few columns, the alignment itself should be inspected.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/read-mapping/">Read mapping</a></li><li><a href="../../terms/blast/">Basic Local Alignment Search Tool</a></li><li><a href="../../terms/phylogenetic-tree/">Phylogenetic tree</a></li><li><a href="../../terms/genome-assembly/">Genome assembly</a></li><li><a href="../../terms/fasta-format/">FASTA format</a></li><li><a href="../../terms/variant-calling/">Variant calling</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Fast and accurate short read alignment with Burrows–Wheeler transform. <em>Bioinformatics</em>. 2009. doi:10.1093/bioinformatics/btp324 <a href="https://doi.org/10.1093/bioinformatics/btp324" rel="noopener">https://doi.org/10.1093/bioinformatics/btp324</a></li><li>MUMmer4: A fast and versatile genome alignment system. <em>PLOS Computational Biology</em>. 2018. doi:10.1371/journal.pcbi.1005944 <a href="https://doi.org/10.1371/journal.pcbi.1005944" rel="noopener">https://doi.org/10.1371/journal.pcbi.1005944</a></li><li>On-demand training in bioinformatics and genomics. <em>EMBL-EBI</em>. <a href="https://www.ebi.ac.uk/training/on-demand" rel="noopener">https://www.ebi.ac.uk/training/on-demand</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0150</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Sequence alignment. The Genomics Dictionary. Entry GD-0150, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/sequence-alignment/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=sequence-alignment&amp;entry_id=GD-0150&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

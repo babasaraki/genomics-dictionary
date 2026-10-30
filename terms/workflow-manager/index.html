@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workflow manager · The Genomics Dictionary</title>
+<meta name="description" content="A workflow manager is software that describes an analysis as a set of steps with declared inputs and outputs, then runs those steps in the right order, in parallel where possible, on a laptop, a cluster or in the cloud. It keeps track of what has already completed, so an interrupted run can resume r">
+<meta property="og:title" content="Workflow manager · The Genomics Dictionary">
+<meta property="og:description" content="A workflow manager is software that describes an analysis as a set of steps with declared inputs and outputs, then runs those steps in the right order, in parallel where possible, on a laptop, a cluster or in the cloud. It keeps track of what has already completed, so an interrupted run can resume r">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/workflow-manager/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Workflow manager", "description": "A workflow manager is software that describes an analysis as a set of steps with declared inputs and outputs, then runs those steps in the right order, in parallel where possible, on a laptop, a cluster or in the cloud. It keeps track of what has already completed, so an interrupted run can resume rather than start again from the beginning.", "identifier": "GD-0158", "url": "https://babasaraki.github.io/genomics-dictionary/terms/workflow-manager/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Workflow manager</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">A workflow manager is software that describes an analysis as a set of steps with declared inputs and outputs, then runs those steps in the right order, in parallel where possible, on a laptop, a cluster or in the cloud. It keeps track of what has already completed, so an interrupted run can resume rather than start again from the beginning.</p>
+
+        <h2>Technical explanation</h2>
+        <p>In a workflow language, each process declares the files it consumes and produces and the command it runs; the manager infers the dependency graph from those declarations rather than from the order in which they were written. This brings several practical benefits: steps that do not depend on one another are executed concurrently, the same description runs on different executors because scheduler details are kept in configuration rather than in the script, failed tasks can be retried with more memory, and completed tasks are cached so that re-running after a change recomputes only what is affected. Combining a workflow description with pinned software environments, usually containers, and with a version-controlled repository gives an analysis that another group can execute on their own data. The costs are a steeper learning curve than a shell script, an extra layer to debug when a task fails inside a container on a remote node, and the temptation to treat a community pipeline as a black box. A workflow guarantees that the same steps run; it does not guarantee that those steps suit the data.</p>
+
+        <h2>Practical example</h2>
+        <p>A genomic surveillance programme processes sequencing runs weekly. The workflow is written once with per-sample steps for quality control, assembly, typing and resistance screening. When one sample fails on memory, only that task is retried at a larger allocation, and the rest of the batch, already cached, is not recomputed.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Using a workflow manager is sometimes equated with having a reproducible analysis. It makes the orchestration repeatable, but reproducibility also requires pinned tool versions, recorded reference and annotation builds, archived parameters and accessible input data. A workflow that calls whichever version of a tool happens to be installed will not reproduce across machines.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/reproducibility/">Computational reproducibility</a></li><li><a href="../../terms/containerisation/">Containerisation</a></li><li><a href="../../terms/version-control/">Version control</a></li><li><a href="../../terms/bioinformatics/">Bioinformatics</a></li><li><a href="../../terms/fair-principles/">FAIR principles</a></li><li><a href="../../terms/pathogen-genomics/">Pathogen genomics</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Nextflow enables reproducible computational workflows. <em>Nature Biotechnology</em>. 2017. doi:10.1038/nbt.3820 <a href="https://doi.org/10.1038/nbt.3820" rel="noopener">https://doi.org/10.1038/nbt.3820</a></li><li>Sustainable data analysis with Snakemake. <em>F1000Research</em>. 2021. doi:10.12688/f1000research.29032.2 <a href="https://doi.org/10.12688/f1000research.29032.2" rel="noopener">https://doi.org/10.12688/f1000research.29032.2</a></li><li>The FAIR Guiding Principles for scientific data management and stewardship. <em>Scientific Data</em>. 2016. doi:10.1038/sdata.2016.18 <a href="https://doi.org/10.1038/sdata.2016.18" rel="noopener">https://doi.org/10.1038/sdata.2016.18</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0158</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Workflow manager. The Genomics Dictionary. Entry GD-0158, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/workflow-manager/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=workflow-manager&amp;entry_id=GD-0158&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

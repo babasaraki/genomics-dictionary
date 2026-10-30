@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amplicon sequencing · The Genomics Dictionary</title>
+<meta name="description" content="Amplicon sequencing is a method in which chosen regions of a genome are copied many times by the polymerase chain reaction and only those copies are sequenced. Because the target is enriched before sequencing, very small amounts of pathogen material can be read even when a sample is dominated by hum">
+<meta property="og:title" content="Amplicon sequencing · The Genomics Dictionary">
+<meta property="og:description" content="Amplicon sequencing is a method in which chosen regions of a genome are copied many times by the polymerase chain reaction and only those copies are sequenced. Because the target is enriched before sequencing, very small amounts of pathogen material can be read even when a sample is dominated by hum">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/amplicon-sequencing/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Amplicon sequencing", "description": "Amplicon sequencing is a method in which chosen regions of a genome are copied many times by the polymerase chain reaction and only those copies are sequenced. Because the target is enriched before sequencing, very small amounts of pathogen material can be read even when a sample is dominated by human or environmental DNA. Tiled sets of overlapping primers can cover a whole small genome.", "identifier": "GD-0103", "url": "https://babasaraki.github.io/genomics-dictionary/terms/amplicon-sequencing/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Amplicon sequencing</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/pathogen-genomics/">Pathogen genomics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Amplicon sequencing is a method in which chosen regions of a genome are copied many times by the polymerase chain reaction and only those copies are sequenced. Because the target is enriched before sequencing, very small amounts of pathogen material can be read even when a sample is dominated by human or environmental DNA. Tiled sets of overlapping primers can cover a whole small genome.</p>
+
+        <h2>Technical explanation</h2>
+        <p>In amplicon sequencing, primers define the regions to be amplified, and the resulting products are converted into a sequencing library. For pathogen work the commonest designs are a single marker region, such as a ribosomal RNA gene for bacterial community profiling, and tiled whole-genome schemes in which overlapping amplicons of one or two kilobases span a viral genome. Enrichment gives high on-target depth from low-biomass samples and keeps sequencing costs modest, which is why tiled schemes became the standard approach for routine viral genomic surveillance. The dependence on primer binding is also the main weakness. Variants under a primer site cause amplicon dropout, producing systematic gaps that must be masked rather than read as deletions, so schemes need periodic revision as the target evolves. Amplification introduces bias in relative abundance, limits detection of structural rearrangements that span primer boundaries, and makes cross-contamination between high-titre and low-titre samples a real risk. Primer sequences must be trimmed before variant calling, otherwise primer-encoded bases can be mistaken for genuine variants.</p>
+
+        <h2>Practical example</h2>
+        <p>A laboratory running a tiled scheme for a respiratory virus notices that genomes from the newest circulating lineage all lack the same region. Coverage plots show one amplicon failing consistently. Aligning the primer sequences against recent genomes reveals two mismatches at the three-prime end of the forward primer. The scheme is updated with a redesigned primer and the affected samples are repeated.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Amplicon data are often treated as though they measure how much of each organism is present. Amplification is not uniform: primer mismatches, template quality and cycle number all change yields, so read counts reflect amplification efficiency as well as abundance. Likewise, a gap in an amplicon genome usually means the amplicon failed, not that the sequence is deleted.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/polymerase-chain-reaction/">Polymerase chain reaction</a></li><li><a href="../../terms/consensus-sequence/">Consensus sequence</a></li><li><a href="../../terms/multiplexing/">Multiplexing and barcoding</a></li><li><a href="../../terms/targeted-panel-sequencing/">Targeted panel sequencing</a></li><li><a href="../../terms/contamination-control/">Contamination control</a></li><li><a href="../../terms/genomic-surveillance/">Genomic surveillance</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Polymerase Chain Reaction PCR — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Polymerase-Chain-Reaction-PCR" rel="noopener">https://www.genome.gov/genetics-glossary/Polymerase-Chain-Reaction-PCR</a></li><li>Testing at scale during the COVID-19 pandemic. <em>Nature Reviews Genetics</em>. 2021. doi:10.1038/s41576-021-00360-w <a href="https://doi.org/10.1038/s41576-021-00360-w" rel="noopener">https://doi.org/10.1038/s41576-021-00360-w</a></li><li>DNA Sequencing — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/DNA-Sequencing" rel="noopener">https://www.genome.gov/genetics-glossary/DNA-Sequencing</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0103</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Amplicon sequencing. The Genomics Dictionary. Entry GD-0103, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/amplicon-sequencing/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=amplicon-sequencing&amp;entry_id=GD-0103&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

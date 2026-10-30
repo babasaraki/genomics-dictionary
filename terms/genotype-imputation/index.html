@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genotype imputation · The Genomics Dictionary</title>
+<meta name="description" content="Genotype imputation fills in positions that were not directly measured, by comparing the positions that were measured against a reference panel of people whose genomes are known in detail. Because nearby variants travel together on shared stretches of chromosome, matching those stretches lets softwa">
+<meta property="og:title" content="Genotype imputation · The Genomics Dictionary">
+<meta property="og:description" content="Genotype imputation fills in positions that were not directly measured, by comparing the positions that were measured against a reference panel of people whose genomes are known in detail. Because nearby variants travel together on shared stretches of chromosome, matching those stretches lets softwa">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/genotype-imputation/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Genotype imputation", "description": "Genotype imputation fills in positions that were not directly measured, by comparing the positions that were measured against a reference panel of people whose genomes are known in detail. Because nearby variants travel together on shared stretches of chromosome, matching those stretches lets software predict the missing genotypes, together with a confidence value for each prediction.", "identifier": "GD-0054", "url": "https://babasaraki.github.io/genomics-dictionary/terms/genotype-imputation/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Genotype imputation</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/human-population-genomics/">Human and population genomics</a> <a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Genotype imputation fills in positions that were not directly measured, by comparing the positions that were measured against a reference panel of people whose genomes are known in detail. Because nearby variants travel together on shared stretches of chromosome, matching those stretches lets software predict the missing genotypes, together with a confidence value for each prediction.</p>
+
+        <h2>Technical explanation</h2>
+        <p>Imputation takes sparse genotypes, usually from an array, phases them into haplotypes, and matches those haplotypes against a dense reference panel using hidden Markov models, returning posterior genotype probabilities or dosages plus a quality metric such as an info or r-squared score. It raises effective marker density by one to two orders of magnitude, enabling meta-analysis across studies genotyped on different arrays and improving fine-mapping resolution. Accuracy depends on reference panel size, on how closely panel haplotypes resemble those in the target sample, and on allele frequency, since rare variants impute far less reliably than common ones. Panels built predominantly from European-ancestry samples impute African and admixed genomes poorly, which is a practical driver for expanding diverse and multi-ancestry panels. Downstream analyses should use dosages and filter on the quality metric rather than hard-calling genotypes, because treating uncertain imputed calls as though they had been observed propagates error into association statistics and into any score built from them.</p>
+
+        <h2>Practical example</h2>
+        <p>A group analysing samples from several West African cohorts imputes against a panel dominated by European-ancestry haplotypes and obtains poor quality scores for a large fraction of variants. Re-running the analysis against a multi-ancestry panel recovers a substantial number of well-imputed variants, and the association analysis is repeated on the improved dataset.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Imputed genotypes are often treated as though they had been measured directly. They are probabilistic predictions conditional on a reference panel, and their reliability varies by variant, by allele frequency and by how well the panel represents the sample. Laboratories therefore confirm any imputed result by direct assay before it is used for reporting purposes.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/haplotype/">Haplotype</a></li><li><a href="../../terms/phasing/">Haplotype phasing</a></li><li><a href="../../terms/linkage-disequilibrium/">Linkage disequilibrium</a></li><li><a href="../../terms/reference-genome/">Reference genome</a></li><li><a href="../../terms/genome-wide-association-study/">Genome-wide association study</a></li><li><a href="../../terms/microarray/">Microarray</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Reference-based phasing using the Haplotype Reference Consortium panel. <em>Nature Genetics</em>. 2016. doi:10.1038/ng.3679 <a href="https://doi.org/10.1038/ng.3679" rel="noopener">https://doi.org/10.1038/ng.3679</a></li><li>Whole-exome imputation within UK Biobank powers rare coding variant association and fine-mapping analyses. <em>Nature Genetics</em>. 2021. doi:10.1038/s41588-021-00892-1 <a href="https://doi.org/10.1038/s41588-021-00892-1" rel="noopener">https://doi.org/10.1038/s41588-021-00892-1</a></li><li>The Missing Diversity in Human Genetic Studies. <em>Cell</em>. 2019. doi:10.1016/j.cell.2019.02.048 <a href="https://doi.org/10.1016/j.cell.2019.02.048" rel="noopener">https://doi.org/10.1016/j.cell.2019.02.048</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0054</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Genotype imputation. The Genomics Dictionary. Entry GD-0054, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/genotype-imputation/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=genotype-imputation&amp;entry_id=GD-0054&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Normalisation · The Genomics Dictionary</title>
+<meta name="description" content="Normalisation adjusts measurements so that samples can be compared fairly. In sequencing, one sample may simply have produced more reads than another, and longer genes attract more reads than shorter ones. Normalisation removes such technical differences in scale, so that remaining differences betwe">
+<meta property="og:title" content="Normalisation · The Genomics Dictionary">
+<meta property="og:description" content="Normalisation adjusts measurements so that samples can be compared fairly. In sequencing, one sample may simply have produced more reads than another, and longer genes attract more reads than shorter ones. Normalisation removes such technical differences in scale, so that remaining differences betwe">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/normalisation/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Normalisation", "description": "Normalisation adjusts measurements so that samples can be compared fairly. In sequencing, one sample may simply have produced more reads than another, and longer genes attract more reads than shorter ones. Normalisation removes such technical differences in scale, so that remaining differences between samples are more likely to reflect biology rather than how much data each sample yielded.", "identifier": "GD-0170", "url": "https://babasaraki.github.io/genomics-dictionary/terms/normalisation/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Normalisation</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Normalisation adjusts measurements so that samples can be compared fairly. In sequencing, one sample may simply have produced more reads than another, and longer genes attract more reads than shorter ones. Normalisation removes such technical differences in scale, so that remaining differences between samples are more likely to reflect biology rather than how much data each sample yielded.</p>
+
+        <h2>Technical explanation</h2>
+        <p>Normalisation methods differ according to what they assume. Simple scaling by total counts is vulnerable to a few very highly expressed features dominating the library, so methods based on a median or trimmed ratio of counts across samples are standard for bulk expression analysis; both rest on the assumption that most features are not differentially expressed, which fails when global transcriptional output changes. Within-sample measures expressed per kilobase per million reads adjust for length and depth and are suitable for comparing features within a sample but not across samples. Transcript-level quantification tools additionally correct for fragment length, sequence composition and positional bias. Single-cell data require their own treatment, because counts per cell vary by orders of magnitude and zeros are abundant. Modern differential expression frameworks estimate size factors internally and model raw counts directly, so pre-normalised values should not be supplied to them. The general caution is that normalisation encodes an assumption about what should be comparable; when that assumption is wrong, it will manufacture apparent differences or conceal real ones, and no amount of normalisation repairs a confounded design.</p>
+
+        <h2>Practical example</h2>
+        <p>An RNA sequencing experiment includes one sample with half the sequencing depth of the others. Raw counts make its genes look uniformly lower. After size factors are estimated and applied, the sample sits with the rest, and the comparison of interest is no longer dominated by the difference in library size.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Normalisation is sometimes assumed to make samples equivalent, so that any remaining difference must be biological. It corrects only the specific technical effects its method targets, typically depth and composition. Batch structure, degraded input material and differences in cellular composition survive normalisation untouched and require separate handling in the design or the model.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/differential-expression/">Differential expression</a></li><li><a href="../../terms/batch-effect/">Batch effect</a></li><li><a href="../../terms/rna-sequencing/">RNA sequencing</a></li><li><a href="../../terms/single-cell-rna-sequencing/">Single-cell RNA sequencing</a></li><li><a href="../../terms/read-depth/">Read depth</a></li><li><a href="../../terms/gene-expression/">Gene expression</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. <em>Genome Biology</em>. 2014. doi:10.1186/s13059-014-0550-8 <a href="https://doi.org/10.1186/s13059-014-0550-8" rel="noopener">https://doi.org/10.1186/s13059-014-0550-8</a></li><li>limma powers differential expression analyses for RNA-sequencing and microarray studies. <em>Nucleic Acids Research</em>. 2015. doi:10.1093/nar/gkv007 <a href="https://doi.org/10.1093/nar/gkv007" rel="noopener">https://doi.org/10.1093/nar/gkv007</a></li><li>Salmon provides fast and bias-aware quantification of transcript expression. <em>Nature Methods</em>. 2017. doi:10.1038/nmeth.4197 <a href="https://doi.org/10.1038/nmeth.4197" rel="noopener">https://doi.org/10.1038/nmeth.4197</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0170</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Normalisation. The Genomics Dictionary. Entry GD-0170, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/normalisation/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=normalisation&amp;entry_id=GD-0170&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

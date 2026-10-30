@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>N50 · The Genomics Dictionary</title>
+<meta name="description" content="N50 is a summary statistic describing how contiguous a genome assembly is. Sort the assembled pieces from longest to shortest and add their lengths until half the total assembly length is reached; the length of the piece that takes the running total past that halfway point is the N50. A larger N50 m">
+<meta property="og:title" content="N50 · The Genomics Dictionary">
+<meta property="og:description" content="N50 is a summary statistic describing how contiguous a genome assembly is. Sort the assembled pieces from longest to shortest and add their lengths until half the total assembly length is reached; the length of the piece that takes the running total past that halfway point is the N50. A larger N50 m">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/n50/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "N50", "description": "N50 is a summary statistic describing how contiguous a genome assembly is. Sort the assembled pieces from longest to shortest and add their lengths until half the total assembly length is reached; the length of the piece that takes the running total past that halfway point is the N50. A larger N50 means the assembly is built from longer pieces.", "identifier": "GD-0155", "url": "https://babasaraki.github.io/genomics-dictionary/terms/n50/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>N50</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">N50 is a summary statistic describing how contiguous a genome assembly is. Sort the assembled pieces from longest to shortest and add their lengths until half the total assembly length is reached; the length of the piece that takes the running total past that halfway point is the N50. A larger N50 means the assembly is built from longer pieces.</p>
+
+        <h2>Technical explanation</h2>
+        <p>N50 is length-weighted rather than an average: it is the length such that pieces of that size or longer account for at least half the assembly. It is reported for contigs and separately for scaffolds, which include gaps, so the two values are not interchangeable. Related statistics qualify it. NG50 uses the expected genome size as the denominator instead of the assembly length, which prevents an inflated or contaminated assembly from scoring well. L50 counts how many pieces are needed to reach the halfway point. NGA50 is computed after aligning to a trusted reference and breaking the assembly at misjoins, so it penalises contiguity bought at the cost of accuracy. The core limitation is that N50 measures only contiguity, never correctness or completeness. An assembler that aggressively joins pieces across repeats can produce a high N50 with chimeric contigs, and an assembly missing a third of the genome can have an excellent N50 across what remains. Gene completeness and misassembly measures must be reported alongside it.</p>
+
+        <h2>Practical example</h2>
+        <p>Two assemblers are compared on the same long-read dataset for a bacterial isolate. One returns a higher contig N50, but aligning both assemblies against a closed reference shows that its longest contig joins two regions in the wrong orientation. The team selects the lower-N50 assembly, which is fragmented but free of misjoins, for resistance gene screening.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>A higher N50 is widely read as a better assembly. It describes only the length distribution of the pieces. An assembly can achieve a large N50 by incorrectly merging across repeats, or by omitting hard regions altogether. Contiguity, completeness and accuracy are three separate properties and only the first is measured here.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/genome-assembly/">Genome assembly</a></li><li><a href="../../terms/de-novo-assembly/">De novo assembly</a></li><li><a href="../../terms/long-read-sequencing/">Long-read sequencing</a></li><li><a href="../../terms/reference-genome/">Reference genome</a></li><li><a href="../../terms/sample-quality-control/">Sample quality control</a></li><li><a href="../../terms/bioinformatics/">Bioinformatics</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Contig — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Contig" rel="noopener">https://www.genome.gov/genetics-glossary/Contig</a></li><li>The complete sequence of a human genome. <em>Science</em>. 2022. doi:10.1126/science.abj6987 <a href="https://doi.org/10.1126/science.abj6987" rel="noopener">https://doi.org/10.1126/science.abj6987</a></li><li>Nanopore sequencing and assembly of a human genome with ultra-long reads. <em>Nature Biotechnology</em>. 2018. doi:10.1038/nbt.4060 <a href="https://doi.org/10.1038/nbt.4060" rel="noopener">https://doi.org/10.1038/nbt.4060</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0155</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">N50. The Genomics Dictionary. Entry GD-0155, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/n50/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=n50&amp;entry_id=GD-0155&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

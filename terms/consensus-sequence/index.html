@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Consensus sequence · The Genomics Dictionary</title>
+<meta name="description" content="A consensus sequence is a single representative sequence built from many overlapping sequencing reads covering the same part of a genome. At each position the base seen in most reads is chosen, and positions with too little data are usually masked with the letter N. For pathogens, the consensus geno">
+<meta property="og:title" content="Consensus sequence · The Genomics Dictionary">
+<meta property="og:description" content="A consensus sequence is a single representative sequence built from many overlapping sequencing reads covering the same part of a genome. At each position the base seen in most reads is chosen, and positions with too little data are usually masked with the letter N. For pathogens, the consensus geno">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/consensus-sequence/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Consensus sequence", "description": "A consensus sequence is a single representative sequence built from many overlapping sequencing reads covering the same part of a genome. At each position the base seen in most reads is chosen, and positions with too little data are usually masked with the letter N. For pathogens, the consensus genome is the file that is shared, compared and used to assign a lineage.", "identifier": "GD-0097", "url": "https://babasaraki.github.io/genomics-dictionary/terms/consensus-sequence/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Consensus sequence</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/pathogen-genomics/">Pathogen genomics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">A consensus sequence is a single representative sequence built from many overlapping sequencing reads covering the same part of a genome. At each position the base seen in most reads is chosen, and positions with too little data are usually masked with the letter N. For pathogens, the consensus genome is the file that is shared, compared and used to assign a lineage.</p>
+
+        <h2>Technical explanation</h2>
+        <p>A consensus sequence is produced by aligning reads to a reference or to a de novo assembly and then calling, for each position, the most frequent base among reads passing quality filters. Tools apply minimum depth and allele-frequency rules: positions below a depth threshold are masked as N, and a variant base is fixed in the consensus only if it exceeds a defined frequency, commonly a clear majority. The result is a haploid-style summary of a population of genomes, which is convenient for lineage assignment and phylogenetics but discards within-host diversity, including minority variants that may matter for resistance or immune escape. Ambiguity codes can be used where a site is genuinely mixed. Consensus genomes are sensitive to method: different depth cut-offs, primer trimming settings and reference choices produce different numbers of masked positions, and amplicon dropout caused by primer-site variants creates systematic gaps that can be mistaken for deletions. Reporting the pipeline, reference accession and masking rules alongside the sequence is therefore part of good practice.</p>
+
+        <h2>Practical example</h2>
+        <p>A laboratory generates SARS-CoV-2 genomes by tiled amplicon sequencing. One batch shows a long run of N characters in the spike region. Rather than reporting a deletion, the bioinformatician checks coverage, finds that a single amplicon failed across the batch, and traces it to a variant under a primer binding site. The affected genomes are flagged and the primer scheme is updated.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Many readers treat a consensus genome as the genome of the infecting pathogen. It is a summary of whatever mixture was sampled and sequenced, produced under specific thresholds. Minority variants are invisible in it, mixed infections may be collapsed into one sequence, and masked regions reflect coverage rather than biology. Comparisons are only fair between genomes made the same way.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/amplicon-sequencing/">Amplicon sequencing</a></li><li><a href="../../terms/read-depth/">Read depth</a></li><li><a href="../../terms/variant-calling/">Variant calling</a></li><li><a href="../../terms/pango-lineage/">Pango lineage</a></li><li><a href="../../terms/genome-assembly/">Genome assembly</a></li><li><a href="../../terms/sequence-alignment/">Sequence alignment</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Twelve years of SAMtools and BCFtools. <em>GigaScience</em>. 2021. doi:10.1093/gigascience/giab008 <a href="https://doi.org/10.1093/gigascience/giab008" rel="noopener">https://doi.org/10.1093/gigascience/giab008</a></li><li>Fast and accurate short read alignment with Burrows–Wheeler transform. <em>Bioinformatics</em>. 2009. doi:10.1093/bioinformatics/btp324 <a href="https://doi.org/10.1093/bioinformatics/btp324" rel="noopener">https://doi.org/10.1093/bioinformatics/btp324</a></li><li>DNA Sequencing — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/DNA-Sequencing" rel="noopener">https://www.genome.gov/genetics-glossary/DNA-Sequencing</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0097</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Consensus sequence. The Genomics Dictionary. Entry GD-0097, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/consensus-sequence/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=consensus-sequence&amp;entry_id=GD-0097&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

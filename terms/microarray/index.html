@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Microarray · The Genomics Dictionary</title>
+<meta name="description" content="A microarray is a slide or chip carrying many thousands of short known DNA sequences arranged in fixed positions. Labelled material from a sample sticks to the spots that match it, and the pattern of signal shows which sequences were present and in what quantity. Arrays measure predetermined targets">
+<meta property="og:title" content="Microarray · The Genomics Dictionary">
+<meta property="og:description" content="A microarray is a slide or chip carrying many thousands of short known DNA sequences arranged in fixed positions. Labelled material from a sample sticks to the spots that match it, and the pattern of signal shows which sequences were present and in what quantity. Arrays measure predetermined targets">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/microarray/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Microarray", "description": "A microarray is a slide or chip carrying many thousands of short known DNA sequences arranged in fixed positions. Labelled material from a sample sticks to the spots that match it, and the pattern of signal shows which sequences were present and in what quantity. Arrays measure predetermined targets rather than reading sequence directly.", "identifier": "GD-0140", "url": "https://babasaraki.github.io/genomics-dictionary/terms/microarray/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Microarray</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/sequencing-laboratory-methods/">Sequencing and laboratory methods</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">A microarray is a slide or chip carrying many thousands of short known DNA sequences arranged in fixed positions. Labelled material from a sample sticks to the spots that match it, and the pattern of signal shows which sequences were present and in what quantity. Arrays measure predetermined targets rather than reading sequence directly.</p>
+
+        <h2>Technical explanation</h2>
+        <p>A microarray measures hybridisation of labelled sample nucleic acid to immobilised probes of known sequence. Genotyping arrays interrogate a fixed set of chosen positions, usually common single-nucleotide polymorphisms, and remain the standard tool for genome-wide association studies and for the genotype data behind polygenic scores, largely because the cost per sample is low and the output is highly standardised. Expression arrays measure transcript abundance from probe intensity, and array comparative genomic hybridisation detects copy-number change across the genome. Signal is continuous and relative, so processing involves background correction, normalisation across arrays and summarisation of multiple probes per feature before statistical analysis. The defining limitation is that an array can only report on content designed into it. Variants not on the chip are not observed and must be inferred by imputation against a reference panel, whose composition determines how well that works, and imputation performs less well for populations poorly represented in available panels. Probes are also sensitive to variants in the probe binding site and to cross-hybridisation of similar sequences, and dynamic range is compressed compared with counting-based methods.</p>
+
+        <h2>Practical example</h2>
+        <p>A population study genotypes thousands of participants on a common array and then imputes additional variants using a reference panel. Because the cohort is largely of African ancestry and the panel contains fewer such genomes, imputation accuracy is lower for many variants, and the team restricts analysis to positions meeting an imputation quality threshold.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Array results are sometimes described as sequencing a person&#x27;s genome. An array does not read sequence; it tests predefined positions by hybridisation. It is therefore blind to any variant not represented on the chip, including most rare variants, and a negative array result is uninformative about positions the design never interrogated.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/genotype-imputation/">Genotype imputation</a></li><li><a href="../../terms/single-nucleotide-polymorphism/">Single-nucleotide polymorphism</a></li><li><a href="../../terms/genome-wide-association-study/">Genome-wide association study</a></li><li><a href="../../terms/copy-number-variant/">Copy number variant</a></li><li><a href="../../terms/gene-expression/">Gene expression</a></li><li><a href="../../terms/polygenic-risk-score/">Polygenic risk score</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Microarray Technology — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Microarray-Technology" rel="noopener">https://www.genome.gov/genetics-glossary/Microarray-Technology</a></li><li>hybridization — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/hybridization" rel="noopener">https://www.genome.gov/genetics-glossary/hybridization</a></li><li>limma powers differential expression analyses for RNA-sequencing and microarray studies. <em>Nucleic Acids Research</em>. 2015. doi:10.1093/nar/gkv007 <a href="https://doi.org/10.1093/nar/gkv007" rel="noopener">https://doi.org/10.1093/nar/gkv007</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0140</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Microarray. The Genomics Dictionary. Entry GD-0140, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/microarray/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=microarray&amp;entry_id=GD-0140&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

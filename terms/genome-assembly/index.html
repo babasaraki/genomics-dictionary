@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genome assembly · The Genomics Dictionary</title>
+<meta name="description" content="Genome assembly is the process of reconstructing the long chromosomes of an organism from the many short or medium-length reads a sequencer produces. Overlapping reads are joined into longer stretches called contigs, which may then be ordered and oriented into scaffolds. The output is a set of seque">
+<meta property="og:title" content="Genome assembly · The Genomics Dictionary">
+<meta property="og:description" content="Genome assembly is the process of reconstructing the long chromosomes of an organism from the many short or medium-length reads a sequencer produces. Overlapping reads are joined into longer stretches called contigs, which may then be ordered and oriented into scaffolds. The output is a set of seque">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/genome-assembly/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Genome assembly", "description": "Genome assembly is the process of reconstructing the long chromosomes of an organism from the many short or medium-length reads a sequencer produces. Overlapping reads are joined into longer stretches called contigs, which may then be ordered and oriented into scaffolds. The output is a set of sequences that approximates the genome, together with statistics describing how complete and contiguous it is.", "identifier": "GD-0153", "url": "https://babasaraki.github.io/genomics-dictionary/terms/genome-assembly/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Genome assembly</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Genome assembly is the process of reconstructing the long chromosomes of an organism from the many short or medium-length reads a sequencer produces. Overlapping reads are joined into longer stretches called contigs, which may then be ordered and oriented into scaffolds. The output is a set of sequences that approximates the genome, together with statistics describing how complete and contiguous it is.</p>
+
+        <h2>Technical explanation</h2>
+        <p>Assembly algorithms fall into two families: overlap-layout-consensus, which compares reads pairwise and suits long reads, and de Bruijn graph methods, which break reads into fixed-length k-mers and suit large numbers of short reads. Both must resolve repeats, and repeats longer than the read length are the fundamental obstacle, since the graph cannot distinguish the possible paths through them. Long reads, linked reads and chromosome conformation data are therefore used to span repetitive structure, and a telomere-to-telomere human assembly became possible only once reads were long and accurate enough to traverse satellite arrays. Assemblies are assessed by contiguity statistics, by the proportion of expected single-copy genes recovered and by agreement with independent data, and polished by mapping reads back to correct residual errors. Limitations are real: haplotypes may be collapsed into a single consensus in a diploid organism, contamination can be incorporated as genuine sequence, and an assembly from a single individual cannot represent the variation of a population, which is the motivation for pangenome references.</p>
+
+        <h2>Practical example</h2>
+        <p>A national laboratory assembles a fungal pathogen genome using long reads. Early drafts break at several ribosomal repeat arrays, so the team increases read length by adjusting extraction to preserve high-molecular-weight DNA. The new assembly spans the repeats, and the completeness check recovers nearly all expected conserved genes.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>A published assembly is easily mistaken for the organism&#x27;s finished genome. Every assembly is a model containing collapsed repeats, gaps, residual base errors and sometimes contaminant sequence, and it reflects one or a few individuals. Describing an assembly as the genome of a species obscures both its technical limits and the diversity it cannot capture.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/de-novo-assembly/">De novo assembly</a></li><li><a href="../../terms/n50/">N50</a></li><li><a href="../../terms/long-read-sequencing/">Long-read sequencing</a></li><li><a href="../../terms/reference-genome/">Reference genome</a></li><li><a href="../../terms/pangenome/">Pangenome</a></li><li><a href="../../terms/sequence-alignment/">Sequence alignment</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Shotgun Sequencing — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Shotgun-Sequencing" rel="noopener">https://www.genome.gov/genetics-glossary/Shotgun-Sequencing</a></li><li>The complete sequence of a human genome. <em>Science</em>. 2022. doi:10.1126/science.abj6987 <a href="https://doi.org/10.1126/science.abj6987" rel="noopener">https://doi.org/10.1126/science.abj6987</a></li><li>Nanopore sequencing and assembly of a human genome with ultra-long reads. <em>Nature Biotechnology</em>. 2018. doi:10.1038/nbt.4060 <a href="https://doi.org/10.1038/nbt.4060" rel="noopener">https://doi.org/10.1038/nbt.4060</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0153</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Genome assembly. The Genomics Dictionary. Entry GD-0153, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/genome-assembly/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=genome-assembly&amp;entry_id=GD-0153&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gene expression · The Genomics Dictionary</title>
+<meta name="description" content="Gene expression is the process by which the information in a gene is used to make a product, usually a protein. It is also the term for how much of that product a cell makes. Expression varies between tissues, between individuals and over time, and it responds to signals, so the same genome produces">
+<meta property="og:title" content="Gene expression · The Genomics Dictionary">
+<meta property="og:description" content="Gene expression is the process by which the information in a gene is used to make a product, usually a protein. It is also the term for how much of that product a cell makes. Expression varies between tissues, between individuals and over time, and it responds to signals, so the same genome produces">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/gene-expression/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Gene expression", "description": "Gene expression is the process by which the information in a gene is used to make a product, usually a protein. It is also the term for how much of that product a cell makes. Expression varies between tissues, between individuals and over time, and it responds to signals, so the same genome produces very different cells.", "identifier": "GD-0036", "url": "https://babasaraki.github.io/genomics-dictionary/terms/gene-expression/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Gene expression</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/genetics-foundations/">Genetics foundations</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Gene expression is the process by which the information in a gene is used to make a product, usually a protein. It is also the term for how much of that product a cell makes. Expression varies between tissues, between individuals and over time, and it responds to signals, so the same genome produces very different cells.</p>
+
+        <h2>Technical explanation</h2>
+        <p>Gene expression encompasses transcription, RNA processing, export, translation and the degradation steps that set steady-state abundance. It is most often measured as transcript abundance by RNA sequencing, which involves library preparation, alignment or pseudoalignment to a transcriptome, and quantification, followed by normalisation for sequencing depth and library composition. Differential expression testing uses count-based models with moderated dispersion estimates, and multiple testing correction is essential given the number of genes examined. Design matters more than depth for most questions: biological replication, randomisation of samples across batches and recording of covariates such as collection time, tissue composition and sex protect against confounding, and batch effects can otherwise dominate the signal. Bulk measurements average over cell types, so apparent expression changes may reflect shifts in composition, which single-cell methods can resolve at the cost of sparsity and additional technical noise. Expression differences are correlative; demonstrating that a change in expression causes a phenotype requires perturbation experiments.</p>
+
+        <h2>Practical example</h2>
+        <p>A group comparing tumour and adjacent tissue processes all tumour samples in one sequencing run and all adjacent samples in another. Because batch is now perfectly confounded with the comparison of interest, no statistical adjustment can separate them, and the study is redesigned with samples randomised across runs before data are generated.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Gene expression results are frequently read as showing that a gene causes a difference. Expression analysis identifies association, and changes may be downstream consequences. A second error is to treat transcript abundance as protein abundance, when the two correlate only moderately because translation and protein turnover are regulated independently.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/transcription/">Transcription</a></li><li><a href="../../terms/messenger-rna/">Messenger RNA</a></li><li><a href="../../terms/differential-expression/">Differential expression</a></li><li><a href="../../terms/rna-sequencing/">RNA sequencing</a></li><li><a href="../../terms/epigenetics/">Epigenetics</a></li><li><a href="../../terms/batch-effect/">Batch effect</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Gene Expression — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Gene-Expression" rel="noopener">https://www.genome.gov/genetics-glossary/Gene-Expression</a></li><li>Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. <em>Genome Biology</em>. 2014. doi:10.1186/s13059-014-0550-8 <a href="https://doi.org/10.1186/s13059-014-0550-8" rel="noopener">https://doi.org/10.1186/s13059-014-0550-8</a></li><li>RNA seq — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/RNA-seq" rel="noopener">https://www.genome.gov/genetics-glossary/RNA-seq</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0036</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Gene expression. The Genomics Dictionary. Entry GD-0036, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/gene-expression/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=gene-expression&amp;entry_id=GD-0036&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

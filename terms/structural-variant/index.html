@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Structural variant · The Genomics Dictionary</title>
+<meta name="description" content="A structural variant, or SV, is a difference in DNA involving a sizeable chunk of a chromosome rather than one or a few letters. Deletions, duplications, insertions, inversions and translocations all count. The usual working threshold is around fifty base pairs. Structural variants are far less nume">
+<meta property="og:title" content="Structural variant · The Genomics Dictionary">
+<meta property="og:description" content="A structural variant, or SV, is a difference in DNA involving a sizeable chunk of a chromosome rather than one or a few letters. Deletions, duplications, insertions, inversions and translocations all count. The usual working threshold is around fifty base pairs. Structural variants are far less nume">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/structural-variant/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Structural variant", "description": "A structural variant, or SV, is a difference in DNA involving a sizeable chunk of a chromosome rather than one or a few letters. Deletions, duplications, insertions, inversions and translocations all count. The usual working threshold is around fifty base pairs. Structural variants are far less numerous than single-letter differences, yet together they affect much more total DNA in any genome.", "identifier": "GD-0057", "url": "https://babasaraki.github.io/genomics-dictionary/terms/structural-variant/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}, "alternateName": "SV"}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Structural variant</h1>
+        <p class="acronym">SV</p>
+        <p class="entry-meta"><a class="chip" href="../../subjects/human-population-genomics/">Human and population genomics</a> <a class="chip" href="../../subjects/clinical-cancer-genomics/">Clinical and cancer genomics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">A structural variant, or SV, is a difference in DNA involving a sizeable chunk of a chromosome rather than one or a few letters. Deletions, duplications, insertions, inversions and translocations all count. The usual working threshold is around fifty base pairs. Structural variants are far less numerous than single-letter differences, yet together they affect much more total DNA in any genome.</p>
+
+        <h2>Technical explanation</h2>
+        <p>Structural variants are described as balanced, such as inversions and reciprocal translocations that rearrange sequence without net gain or loss, or unbalanced, where copy number changes. Detection depends heavily on technology. Short-read calling infers structural variants indirectly from discordant read pairs, split reads, read depth and local assembly, and performs poorly in repetitive sequence, which is precisely where many such variants lie; false positive and false negative rates are high and callers disagree substantially. Long-read sequencing spans repeats and resolves breakpoints directly, raising sensitivity considerably, while optical mapping and karyotyping remain useful for very large events. Structural variants matter biologically because they can delete or duplicate entire genes, interrupt coding sequence at a breakpoint, fuse two genes, or reposition regulatory elements relative to their targets and so rewire expression. Germline events contribute to developmental disorders, and somatic events are a defining feature of many tumours. Reporting is hampered by inconsistent breakpoint representation across file formats and by population databases that remain far less complete than those for small variants.</p>
+
+        <h2>Practical example</h2>
+        <p>A diagnostic team with a negative exome result for a suspected developmental disorder revisits the case using long-read sequencing. The data reveal a balanced inversion whose breakpoint interrupts a gene of interest, an event invisible to exome capture and poorly resolved by short-read mapping across the repetitive sequence surrounding the breakpoint.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Structural variants are often assumed to be rare and almost always harmful. Every human genome carries thousands of them, the great majority with no known consequence, including common polymorphic deletions and duplications. Conversely, a negative short-read analysis is weak evidence of absence, because detection remains unreliable in repetitive regions.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/copy-number-variant/">Copy number variant</a></li><li><a href="../../terms/insertion-deletion/">Insertion or deletion</a></li><li><a href="../../terms/long-read-sequencing/">Long-read sequencing</a></li><li><a href="../../terms/reference-genome/">Reference genome</a></li><li><a href="../../terms/variant-calling/">Variant calling</a></li><li><a href="../../terms/pangenome/">Pangenome</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Structural Variation — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Structural-Variation" rel="noopener">https://www.genome.gov/genetics-glossary/Structural-Variation</a></li><li>Long-read human genome sequencing and its applications. <em>Nature Reviews Genetics</em>. 2020. doi:10.1038/s41576-020-0236-x <a href="https://doi.org/10.1038/s41576-020-0236-x" rel="noopener">https://doi.org/10.1038/s41576-020-0236-x</a></li><li>A draft human pangenome reference. <em>Nature</em>. 2023. doi:10.1038/s41586-023-05896-x <a href="https://doi.org/10.1038/s41586-023-05896-x" rel="noopener">https://doi.org/10.1038/s41586-023-05896-x</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0057</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Structural variant. The Genomics Dictionary. Entry GD-0057, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/structural-variant/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=structural-variant&amp;entry_id=GD-0057&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

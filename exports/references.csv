@@ -1,0 +1,305 @@
+id,type,title,source,year,doi,url
+ref:10.1038/35057062,article,Initial sequencing and analysis of the human genome,Nature,2001,10.1038/35057062,https://doi.org/10.1038/35057062
+ref:10.1126/science.1058040,article,The Sequence of the Human Genome,Science,2001,10.1126/science.1058040,https://doi.org/10.1126/science.1058040
+ref:10.1038/nature15393,article,A global reference for human genetic variation,Nature,2015,10.1038/nature15393,https://doi.org/10.1038/nature15393
+ref:10.1038/s41586-020-2308-7,article,"The mutational constraint spectrum quantified from variation in 141,456 humans",Nature,2020,10.1038/s41586-020-2308-7,https://doi.org/10.1038/s41586-020-2308-7
+ref:10.1038/gim.2015.30,article,Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology,Genetics in Medicine,2015,10.1038/gim.2015.30,https://doi.org/10.1038/gim.2015.30
+ref:10.1093/bioinformatics/btp324,article,Fast and accurate short read alignment with Burrows–Wheeler transform,Bioinformatics,2009,10.1093/bioinformatics/btp324,https://doi.org/10.1093/bioinformatics/btp324
+ref:10.1093/bioinformatics/btp352,article,The Sequence Alignment/Map format and SAMtools,Bioinformatics,2009,10.1093/bioinformatics/btp352,https://doi.org/10.1093/bioinformatics/btp352
+ref:10.1101/gr.107524.110,article,The Genome Analysis Toolkit: A MapReduce framework for analyzing next-generation DNA sequencing data,Genome Research,2010,10.1101/gr.107524.110,https://doi.org/10.1101/gr.107524.110
+ref:10.1038/nmeth.1923,article,Fast gapped-read alignment with Bowtie 2,Nature Methods,2012,10.1038/nmeth.1923,https://doi.org/10.1038/nmeth.1923
+ref:10.1093/bioinformatics/bts635,article,STAR: ultrafast universal RNA-seq aligner,Bioinformatics,2012,10.1093/bioinformatics/bts635,https://doi.org/10.1093/bioinformatics/bts635
+ref:10.1186/s13059-014-0550-8,article,Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2,Genome Biology,2014,10.1186/s13059-014-0550-8,https://doi.org/10.1186/s13059-014-0550-8
+ref:10.1093/nar/gkv007,article,limma powers differential expression analyses for RNA-sequencing and microarray studies,Nucleic Acids Research,2015,10.1093/nar/gkv007,https://doi.org/10.1093/nar/gkv007
+ref:10.1038/nmeth.4197,article,Salmon provides fast and bias-aware quantification of transcript expression,Nature Methods,2017,10.1038/nmeth.4197,https://doi.org/10.1038/nmeth.4197
+ref:10.1038/nbt.3519,article,Near-optimal probabilistic RNA-seq quantification,Nature Biotechnology,2016,10.1038/nbt.3519,https://doi.org/10.1038/nbt.3519
+ref:10.1093/molbev/msaa015,article,IQ-TREE 2: New Models and Efficient Methods for Phylogenetic Inference in the Genomic Era,Molecular Biology and Evolution,2020,10.1093/molbev/msaa015,https://doi.org/10.1093/molbev/msaa015
+ref:10.1038/s41564-020-0770-5,article,A dynamic nomenclature proposal for SARS-CoV-2 lineages to assist genomic epidemiology,Nature Microbiology,2020,10.1038/s41564-020-0770-5,https://doi.org/10.1038/s41564-020-0770-5
+ref:10.1093/bioinformatics/bty407,article,Nextstrain: real-time tracking of pathogen evolution,Bioinformatics,2018,10.1093/bioinformatics/bty407,https://doi.org/10.1093/bioinformatics/bty407
+ref:10.1126/science.abj6987,article,The complete sequence of a human genome,Science,2022,10.1126/science.abj6987,https://doi.org/10.1126/science.abj6987
+ref:10.1038/s41586-023-05896-x,article,A draft human pangenome reference,Nature,2023,10.1038/s41586-023-05896-x,https://doi.org/10.1038/s41586-023-05896-x
+ref:10.1038/nature19057,article,"Analysis of protein-coding genetic variation in 60,706 humans",Nature,2016,10.1038/nature19057,https://doi.org/10.1038/nature19057
+ref:10.1016/S0140-6736(21)02724-0,article,Global burden of bacterial antimicrobial resistance in 2019: a systematic analysis,The Lancet,2022,10.1016/S0140-6736(21)02724-0,https://doi.org/10.1016/S0140-6736(21)02724-0
+ref:10.1038/s41588-019-0379-x,article,Clinical use of current polygenic risk scores may exacerbate health disparities,Nature Genetics,2019,10.1038/s41588-019-0379-x,https://doi.org/10.1038/s41588-019-0379-x
+ref:10.1038/sdata.2016.18,article,The FAIR Guiding Principles for scientific data management and stewardship,Scientific Data,2016,10.1038/sdata.2016.18,https://doi.org/10.1038/sdata.2016.18
+ref:10.1126/science.1251546,article,Enabling the genomic revolution in Africa,Science,2014,10.1126/science.1251546,https://doi.org/10.1126/science.1251546
+ref:10.1038/s41576-019-0122-6,article,Deep learning: new computational modelling techniques for genomics,Nature Reviews Genetics,2019,10.1038/s41576-019-0122-6,https://doi.org/10.1038/s41576-019-0122-6
+ref:10.1002/cpt.1830,article,Clinical Pharmacogenetics Implementation Consortium Guideline (CPIC) for CYP2C9 and Nonsteroidal Anti‐Inflammatory Drugs,Clinical Pharmacology & Therapeutics,2020,10.1002/cpt.1830,https://doi.org/10.1002/cpt.1830
+ref:10.1093/nar/gkx1153,article,ClinVar: improving access to variant interpretations and supporting evidence,Nucleic Acids Research,2017,10.1093/nar/gkx1153,https://doi.org/10.1093/nar/gkx1153
+ref:10.1038/s41586-021-03819-2,article,Highly accurate protein structure prediction with AlphaFold,Nature,2021,10.1038/s41586-021-03819-2,https://doi.org/10.1038/s41586-021-03819-2
+ref:10.1038/nrg.2017.52,article,Settling the score: variant prioritization and Mendelian disease,Nature Reviews Genetics,2017,10.1038/nrg.2017.52,https://doi.org/10.1038/nrg.2017.52
+ref:10.1186/s13059-016-0974-4,article,The Ensembl Variant Effect Predictor,Genome Biology,2016,10.1186/s13059-016-0974-4,https://doi.org/10.1186/s13059-016-0974-4
+ref:10.1038/s41576-020-0236-x,article,Long-read human genome sequencing and its applications,Nature Reviews Genetics,2020,10.1038/s41576-020-0236-x,https://doi.org/10.1038/s41576-020-0236-x
+ref:10.1093/bioinformatics/btu170,article,Trimmomatic: a flexible trimmer for Illumina sequence data,Bioinformatics,2014,10.1093/bioinformatics/btu170,https://doi.org/10.1093/bioinformatics/btu170
+ref:10.1038/nbt.1754,article,Integrative genomics viewer,Nature Biotechnology,2011,10.1038/nbt.1754,https://doi.org/10.1038/nbt.1754
+ref:10.1371/journal.pcbi.1005944,article,MUMmer4: A fast and versatile genome alignment system,PLOS Computational Biology,2018,10.1371/journal.pcbi.1005944,https://doi.org/10.1371/journal.pcbi.1005944
+ref:10.1038/s41587-019-0201-4,article,Graph-based genome alignment and genotyping with HISAT2 and HISAT-genotype,Nature Biotechnology,2019,10.1038/s41587-019-0201-4,https://doi.org/10.1038/s41587-019-0201-4
+ref:10.1093/gigascience/giab008,article,Twelve years of SAMtools and BCFtools,GigaScience,2021,10.1093/gigascience/giab008,https://doi.org/10.1093/gigascience/giab008
+ref:10.1073/pnas.95.6.3140,article,Multilocus sequence typing: A portable approach to the identification of clones within populations of pathogenic microorganisms,Proceedings of the National Academy of Sciences,1998,10.1073/pnas.95.6.3140,https://doi.org/10.1073/pnas.95.6.3140
+ref:10.1186/s13059-019-1891-0,article,Improved metagenomic analysis with Kraken 2,Genome Biology,2019,10.1186/s13059-019-1891-0,https://doi.org/10.1186/s13059-019-1891-0
+ref:10.1038/s41587-020-0690-1,article,Tracking COVID-19 with wastewater,Nature Biotechnology,2020,10.1038/s41587-020-0690-1,https://doi.org/10.1038/s41587-020-0690-1
+ref:10.1093/jac/dks261,article,Identification of acquired antimicrobial resistance genes,Journal of Antimicrobial Chemotherapy,2012,10.1093/jac/dks261,https://doi.org/10.1093/jac/dks261
+ref:10.1093/nar/gkz935,article,CARD 2020: antibiotic resistome surveillance with the comprehensive antibiotic resistance database,Nucleic Acids Research,2019,10.1093/nar/gkz935,https://doi.org/10.1093/nar/gkz935
+ref:10.1038/nbt.4060,article,Nanopore sequencing and assembly of a human genome with ultra-long reads,Nature Biotechnology,2018,10.1038/nbt.4060,https://doi.org/10.1038/nbt.4060
+ref:10.1016/j.ajhg.2017.06.005,article,"10 Years of GWAS Discovery: Biology, Function, and Translation",The American Journal of Human Genetics,2017,10.1016/j.ajhg.2017.06.005,https://doi.org/10.1016/j.ajhg.2017.06.005
+ref:10.1038/ng.3679,article,Reference-based phasing using the Haplotype Reference Consortium panel,Nature Genetics,2016,10.1038/ng.3679,https://doi.org/10.1038/ng.3679
+ref:10.1056/NEJMoa0706135,article,HLA-B*5701 Screening for Hypersensitivity to Abacavir,New England Journal of Medicine,2008,10.1056/NEJMoa0706135,https://doi.org/10.1056/NEJMoa0706135
+ref:10.1002/cpt.668,article,Clinical Pharmacogenetics Implementation Consortium (CPIC) Guideline for Pharmacogenetics‐Guided Warfarin Dosing: 2017 Update,Clinical Pharmacology & Therapeutics,2017,10.1002/cpt.668,https://doi.org/10.1002/cpt.668
+ref:10.1126/science.aan6733,article,Mismatch repair deficiency predicts response of solid tumors to PD-1 blockade,Science,2017,10.1126/science.aan6733,https://doi.org/10.1126/science.aan6733
+ref:10.1038/nature22364,article,Phylogenetic ctDNA analysis depicts early-stage lung cancer evolution,Nature,2017,10.1038/nature22364,https://doi.org/10.1038/nature22364
+ref:10.15252/msb.20188746,article,Current best practices in single‐cell RNA‐seq analysis: a tutorial,Molecular Systems Biology,2019,10.15252/msb.20188746,https://doi.org/10.15252/msb.20188746
+ref:10.1038/nrg2825,article,Tackling the widespread and critical impact of batch effects in high-throughput data,Nature Reviews Genetics,2010,10.1038/nrg2825,https://doi.org/10.1038/nrg2825
+ref:10.1111/j.2517-6161.1995.tb02031.x,article,Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing,Journal of the Royal Statistical Society Series B: Statistical Methodology,1995,10.1111/j.2517-6161.1995.tb02031.x,https://doi.org/10.1111/j.2517-6161.1995.tb02031.x
+ref:10.1080/00031305.2016.1154108,article,"The ASA Statement on p -Values: Context, Process, and Purpose",The American Statistician,2016,10.1080/00031305.2016.1154108,https://doi.org/10.1080/00031305.2016.1154108
+ref:10.1038/nbt.3820,article,Nextflow enables reproducible computational workflows,Nature Biotechnology,2017,10.1038/nbt.3820,https://doi.org/10.1038/nbt.3820
+ref:10.12688/f1000research.29032.2,article,Sustainable data analysis with Snakemake,F1000Research,2021,10.12688/f1000research.29032.2,https://doi.org/10.12688/f1000research.29032.2
+ref:10.1126/science.1225829,article,A Programmable Dual-RNA–Guided DNA Endonuclease in Adaptive Bacterial Immunity,Science,2012,10.1126/science.1225829,https://doi.org/10.1126/science.1225829
+ref:10.1038/nrg3230,article,"Functions of DNA methylation: islands, start sites, gene bodies and beyond",Nature Reviews Genetics,2012,10.1038/nrg3230,https://doi.org/10.1038/nrg3230
+ref:10.1038/s41576-021-00360-w,article,Testing at scale during the COVID-19 pandemic,Nature Reviews Genetics,2021,10.1038/s41576-021-00360-w,https://doi.org/10.1038/s41576-021-00360-w
+ref:10.1038/s41596-020-0353-1,article,Tutorial: a guide to performing polygenic risk score analyses,Nature Protocols,2020,10.1038/s41596-020-0353-1,https://doi.org/10.1038/s41596-020-0353-1
+ref:10.1002/cpt.1004,article,Clinical Pharmacogenetics Implementation Consortium Guideline for HLA Genotype and Use of Carbamazepine and Oxcarbazepine: 2017 Update,Clinical Pharmacology & Therapeutics,2018,10.1002/cpt.1004,https://doi.org/10.1002/cpt.1004
+ref:10.1038/s41436-021-01172-3,article,ACMG SF v3.0 list for reporting of secondary findings in clinical exome and genome sequencing: a policy statement of the American College of Medical Genetics and Genomics (ACMG),Genetics in Medicine,2021,10.1038/s41436-021-01172-3,https://doi.org/10.1038/s41436-021-01172-3
+ref:10.1016/j.cell.2019.02.048,article,The Missing Diversity in Human Genetic Studies,Cell,2019,10.1016/j.cell.2019.02.048,https://doi.org/10.1016/j.cell.2019.02.048
+ref:10.1038/s41586-021-03205-y,article,"Sequencing of 53,831 diverse genomes from the NHLBI TOPMed Program",Nature,2021,10.1038/s41586-021-03205-y,https://doi.org/10.1038/s41586-021-03205-y
+ref:10.1093/bioinformatics/btq033,article,BEDTools: a flexible suite of utilities for comparing genomic features,Bioinformatics,2010,10.1093/bioinformatics/btq033,https://doi.org/10.1093/bioinformatics/btq033
+ref:10.1038/nmeth.3317,article,HISAT: a fast spliced aligner with low memory requirements,Nature Methods,2015,10.1038/nmeth.3317,https://doi.org/10.1038/nmeth.3317
+ref:10.1038/s41588-021-00892-1,article,Whole-exome imputation within UK Biobank powers rare coding variant association and fine-mapping analyses,Nature Genetics,2021,10.1038/s41588-021-00892-1,https://doi.org/10.1038/s41588-021-00892-1
+ref:nhgri-glossary,resource,Talking Glossary of Genomic and Genetic Terms,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary
+ref:nci-genetics-dictionary,resource,NCI Dictionary of Genetics Terms,National Cancer Institute,,,https://www.cancer.gov/publications/dictionaries/genetics-dictionary/
+ref:ebi-ols4,resource,Ontology Lookup Service (OLS4),EMBL-EBI,,,https://www.ebi.ac.uk/ols4/
+ref:ebi-training,resource,On-demand training in bioinformatics and genomics,EMBL-EBI,,,https://www.ebi.ac.uk/training/on-demand
+ref:ensembl,resource,Ensembl genome browser,EMBL-EBI,,,https://www.ensembl.org/index.html
+ref:ncbi-clinvar,resource,ClinVar archive of variant interpretations,NCBI,,,https://www.ncbi.nlm.nih.gov/clinvar/
+ref:ncbi-dbsnp,resource,dbSNP short genetic variation database,NCBI,,,https://www.ncbi.nlm.nih.gov/snp/
+ref:ncbi-bookshelf,resource,NCBI Bookshelf: genetics and molecular biology texts,NCBI,,,https://www.ncbi.nlm.nih.gov/books/NBK21128/
+ref:ncbi-sra,resource,Sequence Read Archive documentation,NCBI,,,https://www.ncbi.nlm.nih.gov/sra/docs/
+ref:ebi-ena,resource,European Nucleotide Archive,EMBL-EBI,,,https://www.ebi.ac.uk/ena/browser/home
+ref:ebi-alphafold,resource,AlphaFold Protein Structure Database,EMBL-EBI,,,https://alphafold.ebi.ac.uk/
+ref:nhgri/Adenine,resource,Adenine — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Adenine
+ref:nhgri/Allele,resource,Allele — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Allele
+ref:nhgri/Alternative-Splicing,resource,Alternative Splicing — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Alternative-Splicing
+ref:nhgri/Amino-Acids,resource,Amino Acids — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Amino-Acids
+ref:nhgri/Aneuploidy,resource,Aneuploidy — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Aneuploidy
+ref:nhgri/Animal-Model,resource,Animal Model — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Animal-Model
+ref:nhgri/Anticodon,resource,Anticodon — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Anticodon
+ref:nhgri/Autism,resource,Autism — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Autism
+ref:nhgri/Autosomal-Dominant-Disorder,resource,Autosomal Dominant Disorder — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Autosomal-Dominant-Disorder
+ref:nhgri/Autosomal-Recessive-Disorder,resource,Autosomal Recessive Disorder — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Autosomal-Recessive-Disorder
+ref:nhgri/Autosome,resource,Autosome — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Autosome
+ref:nhgri/BRCA1-BRCA2,resource,BRCA1 BRCA2 — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/BRCA1-BRCA2
+ref:nhgri/Base-Pair,resource,Base Pair — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Base-Pair
+ref:nhgri/Bioinformatics,resource,Bioinformatics — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Bioinformatics
+ref:nhgri/Birth-Defect,resource,Birth Defect — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Birth-Defect
+ref:nhgri/CRISPR,resource,CRISPR — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/CRISPR
+ref:nhgri/Cancer,resource,Cancer — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Cancer
+ref:nhgri/Cancer-Susceptibility-Gene,resource,Cancer Susceptibility Gene — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Cancer-Susceptibility-Gene
+ref:nhgri/Candidate-Gene,resource,Candidate Gene — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Candidate-Gene
+ref:nhgri/Carcinogen,resource,Carcinogen — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Carcinogen
+ref:nhgri/Carrier,resource,Carrier — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Carrier
+ref:nhgri/Carrier-Screening,resource,Carrier Screening — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Carrier-Screening
+ref:nhgri/Cell-Free-DNA-Testing,resource,Cell Free DNA Testing — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Cell-Free-DNA-Testing
+ref:nhgri/Centimorgan-cM,resource,Centimorgan cM — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Centimorgan-cM
+ref:nhgri/Central-Dogma,resource,Central Dogma — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Central-Dogma
+ref:nhgri/Centromere,resource,Centromere — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Centromere
+ref:nhgri/Chromatid,resource,Chromatid — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Chromatid
+ref:nhgri/Chromatin,resource,Chromatin — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Chromatin
+ref:nhgri/Chromosome,resource,Chromosome — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Chromosome
+ref:nhgri/Cloning,resource,Cloning — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Cloning
+ref:nhgri/Codominance,resource,Codominance — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Codominance
+ref:nhgri/Codon,resource,Codon — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Codon
+ref:nhgri/Complex-Disease,resource,Complex Disease — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Complex-Disease
+ref:nhgri/Congenital,resource,Congenital — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Congenital
+ref:nhgri/Contig,resource,Contig — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Contig
+ref:nhgri/Copy-Number-Variation-CNV,resource,Copy Number Variation CNV — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Copy-Number-Variation-CNV
+ref:nhgri/Crossing-Over,resource,Crossing Over — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Crossing-Over
+ref:nhgri/Cystic-Fibrosis-CF,resource,Cystic Fibrosis CF — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Cystic-Fibrosis-CF
+ref:nhgri/Cytogenetics,resource,Cytogenetics — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Cytogenetics
+ref:nhgri/Cytosine,resource,Cytosine — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Cytosine
+ref:nhgri/DNA-Fingerprinting,resource,DNA Fingerprinting — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/DNA-Fingerprinting
+ref:nhgri/DNA-Replication,resource,DNA Replication — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/DNA-Replication
+ref:nhgri/DNA-Sequencing,resource,DNA Sequencing — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/DNA-Sequencing
+ref:nhgri/Data-Science,resource,Data Science — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Data-Science
+ref:nhgri/Deletion,resource,Deletion — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Deletion
+ref:nhgri/Deoxyribonucleic-Acid,resource,Deoxyribonucleic Acid — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid
+ref:nhgri/Deoxyribonucleic-Acid-DNA,resource,Deoxyribonucleic Acid DNA — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid-DNA
+ref:nhgri/Diploid,resource,Diploid — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Diploid
+ref:nhgri/Dominant-Traits-and-Alleles,resource,Dominant Traits and Alleles — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Dominant-Traits-and-Alleles
+ref:nhgri/Double-Helix,resource,Double Helix — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Double-Helix
+ref:nhgri/Down-Syndrome-Trisomy-21,resource,Down Syndrome Trisomy 21 — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Down-Syndrome-Trisomy-21
+ref:nhgri/Duplication,resource,Duplication — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Duplication
+ref:nhgri/Electrophoresis,resource,Electrophoresis — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Electrophoresis
+ref:nhgri/Environmental-Factors,resource,Environmental Factors — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Environmental-Factors
+ref:nhgri/Epigenetics,resource,Epigenetics — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Epigenetics
+ref:nhgri/Epistasis,resource,Epistasis — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Epistasis
+ref:nhgri/Eugenics,resource,Eugenics — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Eugenics
+ref:nhgri/Evolution,resource,Evolution — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Evolution
+ref:nhgri/Exome,resource,Exome — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Exome
+ref:nhgri/Exon,resource,Exon — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Exon
+ref:nhgri/Family-History,resource,Family History — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Family-History
+ref:nhgri/Fibroblast,resource,Fibroblast — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Fibroblast
+ref:nhgri/First-Degree-Relative,resource,First Degree Relative — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/First-Degree-Relative
+ref:nhgri/Fluorescence-In-Situ-Hybridization-FISH,resource,Fluorescence In Situ Hybridization FISH — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Fluorescence-In-Situ-Hybridization-FISH
+ref:nhgri/Founder-Effect,resource,Founder Effect — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Founder-Effect
+ref:nhgri/Fragile-X-Syndrome,resource,Fragile X Syndrome — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Fragile-X-Syndrome
+ref:nhgri/Frameshift-Mutation,resource,Frameshift Mutation — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Frameshift-Mutation
+ref:nhgri/Fraternal-Twins,resource,Fraternal Twins — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Fraternal-Twins
+ref:nhgri/Gamete,resource,Gamete — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Gamete
+ref:nhgri/Gene,resource,Gene — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Gene
+ref:nhgri/Gene-Amplification,resource,Gene Amplification — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Gene-Amplification
+ref:nhgri/Gene-Environment-Interaction,resource,Gene Environment Interaction — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Gene-Environment-Interaction
+ref:nhgri/Gene-Expression,resource,Gene Expression — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Gene-Expression
+ref:nhgri/Gene-Mapping,resource,Gene Mapping — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Gene-Mapping
+ref:nhgri/Gene-Pool,resource,Gene Pool — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Gene-Pool
+ref:nhgri/Gene-Regulation,resource,Gene Regulation — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Gene-Regulation
+ref:nhgri/Gene-Therapy,resource,Gene Therapy — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Gene-Therapy
+ref:nhgri/Genetic-Ancestry,resource,Genetic Ancestry — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genetic-Ancestry
+ref:nhgri/Genetic-Architecture,resource,Genetic Architecture — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genetic-Architecture
+ref:nhgri/Genetic-Code,resource,Genetic Code — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genetic-Code
+ref:nhgri/Genetic-Counseling,resource,Genetic Counseling — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genetic-Counseling
+ref:nhgri/Genetic-Discrimination,resource,Genetic Discrimination — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genetic-Discrimination
+ref:nhgri/Genetic-Drift,resource,Genetic Drift — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genetic-Drift
+ref:nhgri/Genetic-Engineering,resource,Genetic Engineering — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genetic-Engineering
+ref:nhgri/Genetic-Epidemiology,resource,Genetic Epidemiology — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genetic-Epidemiology
+ref:nhgri/Genetic-Imprinting,resource,Genetic Imprinting — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genetic-Imprinting
+ref:nhgri/Genetic-Information-Nondiscrimination-Act-GINA,resource,Genetic Information Nondiscrimination Act GINA — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genetic-Information-Nondiscrimination-Act-GINA
+ref:nhgri/Genetic-Map,resource,Genetic Map — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genetic-Map
+ref:nhgri/Genetic-Testing,resource,Genetic Testing — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genetic-Testing
+ref:nhgri/Genetically-Modified-Organism-GMO,resource,Genetically Modified Organism GMO — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genetically-Modified-Organism-GMO
+ref:nhgri/Genetics,resource,Genetics — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genetics
+ref:nhgri/Genome,resource,Genome — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genome
+ref:nhgri/Genome-Wide-Association-Studies-GWAS,resource,Genome Wide Association Studies GWAS — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genome-Wide-Association-Studies-GWAS
+ref:nhgri/Genomic-Medicine,resource,Genomic Medicine — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genomic-Medicine
+ref:nhgri/Genomic-Variation,resource,Genomic Variation — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Genomic-Variation
+ref:nhgri/Gigabase-Gb,resource,Gigabase Gb — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Gigabase-Gb
+ref:nhgri/Gregor-Johann-Mendel,resource,Gregor Johann Mendel — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Gregor-Johann-Mendel
+ref:nhgri/Human-Genome-Reference-Sequence,resource,Human Genome Reference Sequence — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Human-Genome-Reference-Sequence
+ref:nhgri/Inherited,resource,Inherited — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Inherited
+ref:nhgri/Insertion,resource,Insertion — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Insertion
+ref:nhgri/Intergenic-Regions,resource,Intergenic Regions — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Intergenic-Regions
+ref:nhgri/Intron,resource,Intron — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Intron
+ref:nhgri/Inversion,resource,Inversion — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Inversion
+ref:nhgri/Karyotype,resource,Karyotype — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Karyotype
+ref:nhgri/Kilobase-kb,resource,Kilobase kb — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Kilobase-kb
+ref:nhgri/Knockout,resource,Knockout — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Knockout
+ref:nhgri/LOD-Score,resource,LOD Score — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/LOD-Score
+ref:nhgri/Linkage,resource,Linkage — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Linkage
+ref:nhgri/Local-Ancestry,resource,Local Ancestry — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Local-Ancestry
+ref:nhgri/Locus,resource,Locus — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Locus
+ref:nhgri/Long-Read-DNA-Sequencing,resource,Long Read DNA Sequencing — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Long-Read-DNA-Sequencing
+ref:nhgri/Loss-of-Heterozygosity-LOH,resource,Loss of Heterozygosity LOH — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Loss-of-Heterozygosity-LOH
+ref:nhgri/Lyonization,resource,Lyonization — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Lyonization
+ref:nhgri/Mapping,resource,Mapping — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Mapping
+ref:nhgri/Marker,resource,Marker — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Marker
+ref:nhgri/Megabase-Mb,resource,Megabase Mb — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Megabase-Mb
+ref:nhgri/Meiosis,resource,Meiosis — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Meiosis
+ref:nhgri/Mendelian-Inheritance,resource,Mendelian Inheritance — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Mendelian-Inheritance
+ref:nhgri/Messenger-RNA-mRNA,resource,Messenger RNA mRNA — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Messenger-RNA-mRNA
+ref:nhgri/Metagenomics,resource,Metagenomics — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Metagenomics
+ref:nhgri/Metaphase,resource,Metaphase — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Metaphase
+ref:nhgri/Methylation,resource,Methylation — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Methylation
+ref:nhgri/Microarray-Technology,resource,Microarray Technology — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Microarray-Technology
+ref:nhgri/Microbiome,resource,Microbiome — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Microbiome
+ref:nhgri/Microsatellite,resource,Microsatellite — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Microsatellite
+ref:nhgri/Missense-Mutation,resource,Missense Mutation — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Missense-Mutation
+ref:nhgri/Mitochondrial-DNA,resource,Mitochondrial DNA — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Mitochondrial-DNA
+ref:nhgri/Mitosis,resource,Mitosis — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Mitosis
+ref:nhgri/Monosomy,resource,Monosomy — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Monosomy
+ref:nhgri/Mosaicism,resource,Mosaicism — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Mosaicism
+ref:nhgri/Mutagen,resource,Mutagen — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Mutagen
+ref:nhgri/Mutation,resource,Mutation — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Mutation
+ref:nhgri/Nanopore-DNA-Sequencing,resource,Nanopore DNA Sequencing — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Nanopore-DNA-Sequencing
+ref:nhgri/Nanotechnology,resource,Nanotechnology — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Nanotechnology
+ref:nhgri/Newborn-Genetic-Screening,resource,Newborn Genetic Screening — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Newborn-Genetic-Screening
+ref:nhgri/Non-Coding-DNA,resource,Non Coding DNA — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Non-Coding-DNA
+ref:nhgri/Nonsense-Mutation,resource,Nonsense Mutation — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Nonsense-Mutation
+ref:nhgri/Northern-Blot,resource,Northern Blot — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Northern-Blot
+ref:nhgri/Nuclear-Membrane,resource,Nuclear Membrane — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Nuclear-Membrane
+ref:nhgri/Nucleic-Acids,resource,Nucleic Acids — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Nucleic-Acids
+ref:nhgri/Nucleolus,resource,Nucleolus — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Nucleolus
+ref:nhgri/Nucleopore,resource,Nucleopore — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Nucleopore
+ref:nhgri/Nucleosome,resource,Nucleosome — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Nucleosome
+ref:nhgri/Nucleotide,resource,Nucleotide — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Nucleotide
+ref:nhgri/Nucleus,resource,Nucleus — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Nucleus
+ref:nhgri/Oncogene,resource,Oncogene — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Oncogene
+ref:nhgri/Open-Reading-Frame,resource,Open Reading Frame — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Open-Reading-Frame
+ref:nhgri/Pangenome,resource,Pangenome — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Pangenome
+ref:nhgri/Pathogenic-Variant,resource,Pathogenic Variant — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Pathogenic-Variant
+ref:nhgri/Pedigree,resource,Pedigree — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Pedigree
+ref:nhgri/Peptide,resource,Peptide — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Peptide
+ref:nhgri/Pharmacogenomics,resource,Pharmacogenomics — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Pharmacogenomics
+ref:nhgri/Phenotype,resource,Phenotype — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Phenotype
+ref:nhgri/Phenotypic-Variance,resource,Phenotypic Variance — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Phenotypic-Variance
+ref:nhgri/Physical-Map,resource,Physical Map — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Physical-Map
+ref:nhgri/Plasmid,resource,Plasmid — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Plasmid
+ref:nhgri/Point-Mutation,resource,Point Mutation — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Point-Mutation
+ref:nhgri/Polydactyly,resource,Polydactyly — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Polydactyly
+ref:nhgri/Polygenic-Risk-Score-PRS,resource,Polygenic Risk Score PRS — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Polygenic-Risk-Score-PRS
+ref:nhgri/Polygenic-Trait,resource,Polygenic Trait — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Polygenic-Trait
+ref:nhgri/Polymerase-Chain-Reaction-PCR,resource,Polymerase Chain Reaction PCR — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Polymerase-Chain-Reaction-PCR
+ref:nhgri/Polymorphism,resource,Polymorphism — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Polymorphism
+ref:nhgri/Population-Genomics,resource,Population Genomics — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Population-Genomics
+ref:nhgri/Positional-Cloning,resource,Positional Cloning — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Positional-Cloning
+ref:nhgri/Precision-Medicine,resource,Precision Medicine — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Precision-Medicine
+ref:nhgri/Primer,resource,Primer — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Primer
+ref:nhgri/Proband,resource,Proband — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Proband
+ref:nhgri/Promoter,resource,Promoter — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Promoter
+ref:nhgri/Protein,resource,Protein — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Protein
+ref:nhgri/Pseudogene,resource,Pseudogene — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Pseudogene
+ref:nhgri/RNA-Ribonucleic-Acid,resource,RNA Ribonucleic Acid — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/RNA-Ribonucleic-Acid
+ref:nhgri/RNA-seq,resource,RNA seq — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/RNA-seq
+ref:nhgri/Race,resource,Race — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Race
+ref:nhgri/Recessive-Traits-Alleles,resource,Recessive Traits Alleles — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Recessive-Traits-Alleles
+ref:nhgri/Recombinant-DNA-Technology,resource,Recombinant DNA Technology — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Recombinant-DNA-Technology
+ref:nhgri/Repressor,resource,Repressor — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Repressor
+ref:nhgri/Restriction-Enzyme,resource,Restriction Enzyme — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Restriction-Enzyme
+ref:nhgri/Restriction-Fragment-Length-Polymorphism-RFLP,resource,Restriction Fragment Length Polymorphism RFLP — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Restriction-Fragment-Length-Polymorphism-RFLP
+ref:nhgri/Retrovirus,resource,Retrovirus — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Retrovirus
+ref:nhgri/Ribonucleic-Acid-RNA,resource,Ribonucleic Acid RNA — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Ribonucleic-Acid-RNA
+ref:nhgri/Ribosome,resource,Ribosome — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Ribosome
+ref:nhgri/Risk,resource,Risk — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Risk
+ref:nhgri/Scientific-Racism,resource,Scientific Racism — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Scientific-Racism
+ref:nhgri/Secondary-Genomic-Finding,resource,Secondary Genomic Finding — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Secondary-Genomic-Finding
+ref:nhgri/Sex-Chromosome,resource,Sex Chromosome — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Sex-Chromosome
+ref:nhgri/Sex-Linked,resource,Sex Linked — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Sex-Linked
+ref:nhgri/Shotgun-Sequencing,resource,Shotgun Sequencing — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Shotgun-Sequencing
+ref:nhgri/Single-Nucleotide-Polymorphisms-SNPs,resource,Single Nucleotide Polymorphisms SNPs — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Single-Nucleotide-Polymorphisms-SNPs
+ref:nhgri/Somatic-Cells,resource,Somatic Cells — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Somatic-Cells
+ref:nhgri/Southern-Blot,resource,Southern Blot — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Southern-Blot
+ref:nhgri/Stop-Codon,resource,Stop Codon — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Stop-Codon
+ref:nhgri/Structural-Variation,resource,Structural Variation — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Structural-Variation
+ref:nhgri/Substitution,resource,Substitution — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Substitution
+ref:nhgri/Susceptibility,resource,Susceptibility — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Susceptibility
+ref:nhgri/Syndrome,resource,Syndrome — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Syndrome
+ref:nhgri/Tandem-Repeat,resource,Tandem Repeat — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Tandem-Repeat
+ref:nhgri/Telomere,resource,Telomere — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Telomere
+ref:nhgri/Thymine,resource,Thymine — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Thymine
+ref:nhgri/Trait,resource,Trait — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Trait
+ref:nhgri/Transcription,resource,Transcription — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Transcription
+ref:nhgri/Transfer-RNA-tRNA,resource,Transfer RNA tRNA — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Transfer-RNA-tRNA
+ref:nhgri/Transgenic,resource,Transgenic — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Transgenic
+ref:nhgri/Translation,resource,Translation — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Translation
+ref:nhgri/Translocation,resource,Translocation — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Translocation
+ref:nhgri/Tumor-Suppressor-Gene,resource,Tumor Suppressor Gene — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Tumor-Suppressor-Gene
+ref:nhgri/Uracil,resource,Uracil — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Uracil
+ref:nhgri/Variant-of-Uncertain-Significance-VUS,resource,Variant of Uncertain Significance VUS — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Variant-of-Uncertain-Significance-VUS
+ref:nhgri/Vector,resource,Vector — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Vector
+ref:nhgri/Virus,resource,Virus — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Virus
+ref:nhgri/X-Chromosome,resource,X Chromosome — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/X-Chromosome
+ref:nhgri/X-Linked,resource,X Linked — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/X-Linked
+ref:nhgri/Y-Chromosome,resource,Y Chromosome — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/Y-Chromosome
+ref:nhgri/antisense,resource,antisense — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/antisense
+ref:nhgri/genomics,resource,genomics — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/genomics
+ref:nhgri/genotype,resource,genotype — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/genotype
+ref:nhgri/germ-line,resource,germ line — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/germ-line
+ref:nhgri/guanine,resource,guanine — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/guanine
+ref:nhgri/haploid,resource,haploid — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/haploid
+ref:nhgri/haplotype,resource,haplotype — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/haplotype
+ref:nhgri/heterozygous,resource,heterozygous — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/heterozygous
+ref:nhgri/histone,resource,histone — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/histone
+ref:nhgri/homologous-recombination,resource,homologous recombination — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/homologous-recombination
+ref:nhgri/homozygous,resource,homozygous — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/homozygous
+ref:nhgri/human-genome-project,resource,human genome project — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/human-genome-project
+ref:nhgri/huntingtons-disease,resource,huntingtons disease — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/huntingtons-disease
+ref:nhgri/hybridization,resource,hybridization — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/hybridization
+ref:nhgri/identical-twins,resource,identical twins — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/identical-twins
+ref:nhgri/in-situ-hybridization,resource,in situ hybridization — NHGRI Talking Glossary,National Human Genome Research Institute,,,https://www.genome.gov/genetics-glossary/in-situ-hybridization

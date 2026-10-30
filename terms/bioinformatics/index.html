@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bioinformatics · The Genomics Dictionary</title>
+<meta name="description" content="Bioinformatics is the discipline that stores, organises and analyses biological data using computers. Most of that data comes from sequencing DNA, RNA or protein, and it arrives in volumes far too large to inspect by hand. Bioinformatics supplies the file formats, databases, algorithms and statistic">
+<meta property="og:title" content="Bioinformatics · The Genomics Dictionary">
+<meta property="og:description" content="Bioinformatics is the discipline that stores, organises and analyses biological data using computers. Most of that data comes from sequencing DNA, RNA or protein, and it arrives in volumes far too large to inspect by hand. Bioinformatics supplies the file formats, databases, algorithms and statistic">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/bioinformatics/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Bioinformatics", "description": "Bioinformatics is the discipline that stores, organises and analyses biological data using computers. Most of that data comes from sequencing DNA, RNA or protein, and it arrives in volumes far too large to inspect by hand. Bioinformatics supplies the file formats, databases, algorithms and statistics that turn raw instrument output into results a biologist, clinician or public health team can actually read and act upon.", "identifier": "GD-0144", "url": "https://babasaraki.github.io/genomics-dictionary/terms/bioinformatics/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Bioinformatics</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Bioinformatics is the discipline that stores, organises and analyses biological data using computers. Most of that data comes from sequencing DNA, RNA or protein, and it arrives in volumes far too large to inspect by hand. Bioinformatics supplies the file formats, databases, algorithms and statistics that turn raw instrument output into results a biologist, clinician or public health team can actually read and act upon.</p>
+
+        <h2>Technical explanation</h2>
+        <p>Bioinformatics sits between molecular biology, computer science and statistics. A typical project moves raw sequencing reads through quality control, alignment or assembly, feature counting or variant calling, annotation against reference databases, and statistical testing, with each step writing a standardised file that the next step consumes. Practitioners work mostly on the command line under Unix, scripting in Python, R or shell, and increasingly describe whole analyses in a workflow language so that they can be rerun identically. The discipline also builds and curates the public resources the field depends on, including sequence archives, variant databases and genome browsers. Two limitations deserve emphasis. First, a bioinformatics result is only as good as the reference data behind it: reference genomes, annotation sets and variant frequency databases under-represent many populations, and a tool silently inherits those gaps. Second, software versions, parameter choices and reference builds change results, so an analysis that is not version-controlled and documented cannot be trusted to reproduce. Competence therefore includes data management and reproducibility, not only algorithmic skill.</p>
+
+        <h2>Practical example</h2>
+        <p>A district laboratory sequences twenty Klebsiella pneumoniae isolates from a suspected hospital outbreak. The bioinformatician checks read quality, assembles each genome, screens the assemblies for acquired resistance genes, types the isolates and builds a tree showing which cases cluster together. The laboratory contributes the raw reads and the analysis script to a public archive so that colleagues elsewhere can repeat the work.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Bioinformatics is often treated as a service that begins only after the sequencing is finished, with the analyst handed a folder of files and asked to find something interesting. In practice the analysis plan constrains the experiment: sample numbers, read depth, library type and the handling of batches all have to be settled beforehand, because no algorithm can recover information the design never captured.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/sequence-alignment/">Sequence alignment</a></li><li><a href="../../terms/variant-calling/">Variant calling</a></li><li><a href="../../terms/fastq-format/">FASTQ format</a></li><li><a href="../../terms/reproducibility/">Computational reproducibility</a></li><li><a href="../../terms/workflow-manager/">Workflow manager</a></li><li><a href="../../terms/next-generation-sequencing/">Next-generation sequencing</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Bioinformatics — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Bioinformatics" rel="noopener">https://www.genome.gov/genetics-glossary/Bioinformatics</a></li><li>On-demand training in bioinformatics and genomics. <em>EMBL-EBI</em>. <a href="https://www.ebi.ac.uk/training/on-demand" rel="noopener">https://www.ebi.ac.uk/training/on-demand</a></li><li>Data Science — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Data-Science" rel="noopener">https://www.genome.gov/genetics-glossary/Data-Science</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0144</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Bioinformatics. The Genomics Dictionary. Entry GD-0144, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/bioinformatics/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=bioinformatics&amp;entry_id=GD-0144&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+ "title": "The Genomics Dictionary",
+ "tagline": "Plain-language and technical explanations of genomics terminology",
+ "description": "An open-access, searchable dictionary of genomics terminology: a short plain-language definition and a fuller technical explanation for every term, with examples, common misunderstandings, related concepts and references.",
+ "base_url": "https://babasaraki.github.io/genomics-dictionary",
+ "repository_url": "https://github.com/babasaraki/genomics-dictionary",
+ "project_lead": "Dr Umar Ahmad",
+ "contact_email": "CONTACT-EMAIL-TO-BE-CONFIRMED",
+ "launch_status": "reviewed",
+ "corpus_notice": "",
+ "form_endpoint": null,
+ "donation": {
+  "state": "not-configured",
+  "recipient": null,
+  "currency": null,
+  "checkout_url": null,
+  "intended_use": [
+   "hosting and domain costs",
+   "scientific editing and review",
+   "accessibility improvements",
+   "original illustrations",
+   "reviewed translations"
+  ]
+ },
+ "licence": {
+  "state": "not-approved",
+  "proposed": "CC BY 4.0 for original project-written definitions, subject to owner approval; third-party material excluded"
+ },
+ "analytics": {
+  "provider": null
+ },
+ "editorial_lead": "Dr Umar Ahmad",
+ "last_review_date": "2026-10-30"
+}

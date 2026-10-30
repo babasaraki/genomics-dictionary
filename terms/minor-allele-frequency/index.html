@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minor allele frequency · The Genomics Dictionary</title>
+<meta name="description" content="Minor allele frequency, or MAF, is how often the less common of two versions of a DNA position is seen in a group of people. If eight in every hundred copies of a position carry a G and ninety-two carry an A, the minor allele frequency is 0.08. The figure describes a sampled population, not an indiv">
+<meta property="og:title" content="Minor allele frequency · The Genomics Dictionary">
+<meta property="og:description" content="Minor allele frequency, or MAF, is how often the less common of two versions of a DNA position is seen in a group of people. If eight in every hundred copies of a position carry a G and ninety-two carry an A, the minor allele frequency is 0.08. The figure describes a sampled population, not an indiv">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/minor-allele-frequency/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Minor allele frequency", "description": "Minor allele frequency, or MAF, is how often the less common of two versions of a DNA position is seen in a group of people. If eight in every hundred copies of a position carry a G and ninety-two carry an A, the minor allele frequency is 0.08. The figure describes a sampled population, not an individual, and the same allele can be common in one population and almost absent in another.", "identifier": "GD-0040", "url": "https://babasaraki.github.io/genomics-dictionary/terms/minor-allele-frequency/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}, "alternateName": "MAF"}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Minor allele frequency</h1>
+        <p class="acronym">MAF</p>
+        <p class="entry-meta"><a class="chip" href="../../subjects/human-population-genomics/">Human and population genomics</a> <a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Minor allele frequency, or MAF, is how often the less common of two versions of a DNA position is seen in a group of people. If eight in every hundred copies of a position carry a G and ninety-two carry an A, the minor allele frequency is 0.08. The figure describes a sampled population, not an individual, and the same allele can be common in one population and almost absent in another.</p>
+
+        <h2>Technical explanation</h2>
+        <p>MAF is estimated from genotype counts in a defined sample and ranges from zero to 0.5 by construction, since an allele rising above half becomes the major allele. It is a property of the sampled group rather than of the allele itself, so a single global figure can mislead badly. Frequency thresholds structure most analyses: common-variant association studies usually restrict attention to alleles above roughly one per cent because statistical power collapses below that, whereas rare-variant work aggregates lower-frequency alleles into gene-level burden tests. Population frequency is also one strand of evidence in clinical variant classification, where a high frequency in a large, well-powered reference database argues against a variant causing a severe, early-onset condition. The main limitations are sampling noise in small cohorts and uneven representation in reference databases, which makes variation common in under-sampled populations look artificially rare and can push it towards an uncertain classification by default.</p>
+
+        <h2>Practical example</h2>
+        <p>A clinical scientist reviewing a candidate variant checks its frequency across population reference databases and finds it rare overall but present at several per cent within the African-ancestry subset. That frequency makes a highly penetrant severe effect unlikely. The variant is recorded as being of uncertain significance rather than pathogenic while segregation and functional evidence are sought, and the frequency source used is documented.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>A frequent misreading is that a low minor allele frequency makes a variant harmful and a high one makes it harmless. Frequency is only one line of evidence. Many rare variants are entirely neutral, and some alleles with well-established effects, such as common pharmacogenomic star alleles, are carried by a large share of the population.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/single-nucleotide-polymorphism/">Single-nucleotide polymorphism</a></li><li><a href="../../terms/hardy-weinberg-equilibrium/">Hardy-Weinberg equilibrium</a></li><li><a href="../../terms/allele/">Allele</a></li><li><a href="../../terms/genome-wide-association-study/">Genome-wide association study</a></li><li><a href="../../terms/genotype-imputation/">Genotype imputation</a></li><li><a href="../../terms/variant-of-uncertain-significance/">Variant of uncertain significance</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>The mutational constraint spectrum quantified from variation in 141,456 humans. <em>Nature</em>. 2020. doi:10.1038/s41586-020-2308-7 <a href="https://doi.org/10.1038/s41586-020-2308-7" rel="noopener">https://doi.org/10.1038/s41586-020-2308-7</a></li><li>A global reference for human genetic variation. <em>Nature</em>. 2015. doi:10.1038/nature15393 <a href="https://doi.org/10.1038/nature15393" rel="noopener">https://doi.org/10.1038/nature15393</a></li><li>Polymorphism — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Polymorphism" rel="noopener">https://www.genome.gov/genetics-glossary/Polymorphism</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0040</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Minor allele frequency. The Genomics Dictionary. Entry GD-0040, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/minor-allele-frequency/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=minor-allele-frequency&amp;entry_id=GD-0040&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

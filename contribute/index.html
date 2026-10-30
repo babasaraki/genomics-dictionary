@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contribute · The Genomics Dictionary</title>
+<meta name="description" content="How to suggest a term, draft an entry or join the scientific review panel.">
+<meta property="og:title" content="Contribute · The Genomics Dictionary">
+<meta property="og:description" content="How to suggest a term, draft an entry or join the scientific review panel.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/contribute/">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/img/icon-180.png">
+<link rel="alternate icon" href="../assets/img/icon-32.png" sizes="32x32">
+
+</head>
+<body data-root="../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">
+      <img src="../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../dictionary/">Dictionary</a></li>
+        <li><a href="../subjects/">Browse subjects</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../contribute/" aria-current="page">Contribute</a></li>
+        <li><a class="donate-link" href="../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow"><h1>Contribute</h1>
+<p class="lead">The dictionary needs subject specialists more than it needs software. There are three ways to
+help: suggest a missing term, draft an entry, or review entries in your field.</p>
+
+<h2>Who can contribute</h2>
+<p>Anyone with demonstrable expertise in a relevant field — genetics, genomics, bioinformatics, laboratory
+medicine, public health, pharmacogenomics, ethics or governance — may draft entries. Scientific review is
+carried out by named reviewers appointed by the editorial team. A contributor cannot approve or publish their
+own entry; that separation is part of the <a href="../policies/editorial/">editorial policy</a>.</p>
+
+<h2>What a good entry looks like</h2>
+<ol>
+<li>A plain-language definition of roughly 40 to 80 words that a first-year student can follow.</li>
+<li>A technical explanation of roughly 100 to 250 words, including at least one limitation of the concept.</li>
+<li>A practical example from a laboratory, clinic, classroom or surveillance setting — never identifiable
+patient material.</li>
+<li>A common misunderstanding, stated and then corrected.</li>
+<li>Three to six related concepts already in the dictionary.</li>
+<li>Term-specific references with a URL or DOI, not a glossary homepage.</li>
+</ol>
+<p>Write original prose. Adapted text must be documented. Avoid implying that any genome is normal or
+representative, keep association separate from causation, and distinguish germline from somatic findings.</p>
+
+<h2>How drafting and review work today</h2>
+<p>The corpus is held as structured JSON in the project repository. An entry is drafted, validated against the
+schema, reviewed by someone other than its author, and only then marked as approved and published. The
+current 200 entries completed that step in October 2026 and carry the reviewer, the reviewed revision and a
+next-review date; they fall due for re-review in October 2027. New and revised entries follow the same route,
+and a revision made after approval does not reach the public site until it has been reviewed again.</p>
+
+<h2 id="suggest">Suggest a term</h2>
+<div class="callout callout-warn"><p><strong>Submissions are not connected yet.</strong> No form service has been configured for this site, so this form cannot send or store anything. Until the project owner configures one, please use the project contact route instead.</p></div><form class="stacked" onsubmit="return false;"><div><label for="s-term">Term you would like added <span class="required">*</span></label><input id="s-term" name="term" type="text" required></div><div><label for="s-why">Why it matters</label><textarea id="s-why" name="reason" rows="4"></textarea><p class="hint">A sentence on where you met the term and who would benefit.</p></div><div><label for="s-source">A source we should read</label><input id="s-source" name="source" type="url" inputmode="url"></div><div><label for="s-contact">Your email (optional)</label><input id="s-contact" name="email" type="email" autocomplete="email"><p class="hint">Only used to ask a follow-up question about this suggestion.</p></div><div><button class="btn" type="submit">Send suggestion</button></div><p class="hint">Please do not include identifiable patient information, genetic test reports or raw genomic data. Only the fields shown are collected.</p></form>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../dictionary/">All entries</a></li>
+          <li><a href="../subjects/">Browse subjects</a></li>
+          <li><a href="../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../contribute/">Contribute</a></li>
+          <li><a href="../donate/">Support the dictionary</a></li>
+          <li><a href="../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../policies/privacy/">Privacy</a></li>
+          <li><a href="../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/search.js" defer></script>
+</body>
+</html>

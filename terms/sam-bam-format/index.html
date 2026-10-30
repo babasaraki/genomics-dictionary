@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAM and BAM formats · The Genomics Dictionary</title>
+<meta name="description" content="SAM and BAM are the standard formats for storing sequencing reads after they have been mapped to a reference genome. SAM is human-readable text; BAM is the same information compressed into a binary file that software can read quickly. Each record says where a read aligned, how well it aligned, and h">
+<meta property="og:title" content="SAM and BAM formats · The Genomics Dictionary">
+<meta property="og:description" content="SAM and BAM are the standard formats for storing sequencing reads after they have been mapped to a reference genome. SAM is human-readable text; BAM is the same information compressed into a binary file that software can read quickly. Each record says where a read aligned, how well it aligned, and h">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/sam-bam-format/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "SAM and BAM formats", "description": "SAM and BAM are the standard formats for storing sequencing reads after they have been mapped to a reference genome. SAM is human-readable text; BAM is the same information compressed into a binary file that software can read quickly. Each record says where a read aligned, how well it aligned, and how its bases correspond to the reference at that position.", "identifier": "GD-0147", "url": "https://babasaraki.github.io/genomics-dictionary/terms/sam-bam-format/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>SAM and BAM formats</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">SAM and BAM are the standard formats for storing sequencing reads after they have been mapped to a reference genome. SAM is human-readable text; BAM is the same information compressed into a binary file that software can read quickly. Each record says where a read aligned, how well it aligned, and how its bases correspond to the reference at that position.</p>
+
+        <h2>Technical explanation</h2>
+        <p>A SAM record holds the read name, a bitwise flag describing pairing and orientation, the reference name and leftmost position, a mapping quality, a CIGAR string describing the run-length pattern of matches, insertions, deletions and clipping, the mate&#x27;s position, the sequence and its quality string, and optional tagged fields used by individual tools. BAM is the compressed binary equivalent; CRAM compresses further by storing differences from the reference rather than the full sequence. Sorted and indexed BAM files allow a viewer or variant caller to retrieve a single locus without scanning the file. Mapping quality is the most misread field: it estimates the probability that the read is placed at the wrong location, not that the bases are correct, and it collapses to zero where a read maps equally well to several places. Reads from repetitive regions, segmental duplications and paralogous genes therefore carry little weight, which is one reason coverage appears uneven across a genome even after a technically successful run.</p>
+
+        <h2>Practical example</h2>
+        <p>A clinical scientist reviewing a candidate variant opens the BAM file in a genome browser. The supporting reads all align in the same orientation and all carry the alternative allele at the very end of the read, next to a homopolymer run. The pattern suggests an alignment artefact rather than a true variant, so the position is checked by an independent method before it is reported.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Mapping quality and base quality are frequently confused. A read may consist entirely of high-confidence base calls and still have a mapping quality of zero because the region it came from is repeated elsewhere in the genome. Conversely, a uniquely placed read can carry poor base qualities. The two numbers answer different questions and both matter.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/read-mapping/">Read mapping</a></li><li><a href="../../terms/variant-calling/">Variant calling</a></li><li><a href="../../terms/read-depth/">Read depth</a></li><li><a href="../../terms/fastq-format/">FASTQ format</a></li><li><a href="../../terms/reference-genome/">Reference genome</a></li><li><a href="../../terms/variant-call-format/">Variant Call Format</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>The Sequence Alignment/Map format and SAMtools. <em>Bioinformatics</em>. 2009. doi:10.1093/bioinformatics/btp352 <a href="https://doi.org/10.1093/bioinformatics/btp352" rel="noopener">https://doi.org/10.1093/bioinformatics/btp352</a></li><li>Twelve years of SAMtools and BCFtools. <em>GigaScience</em>. 2021. doi:10.1093/gigascience/giab008 <a href="https://doi.org/10.1093/gigascience/giab008" rel="noopener">https://doi.org/10.1093/gigascience/giab008</a></li><li>Integrative genomics viewer. <em>Nature Biotechnology</em>. 2011. doi:10.1038/nbt.1754 <a href="https://doi.org/10.1038/nbt.1754" rel="noopener">https://doi.org/10.1038/nbt.1754</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0147</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">SAM and BAM formats. The Genomics Dictionary. Entry GD-0147, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/sam-bam-format/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=sam-bam-format&amp;entry_id=GD-0147&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

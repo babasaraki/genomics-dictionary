@@ -1,0 +1,42 @@
+[
+ {
+  "slug": "genetics-foundations",
+  "name": "Genetics foundations",
+  "intro": "The vocabulary that everything else is built on: genes, chromosomes, alleles, transcription and translation, inheritance patterns and the chemistry of nucleic acids."
+ },
+ {
+  "slug": "human-population-genomics",
+  "name": "Human and population genomics",
+  "intro": "How genetic variation is distributed within and between human populations, and the concepts used to study it: allele frequency, linkage disequilibrium, ancestry, association studies and reference resources."
+ },
+ {
+  "slug": "clinical-cancer-genomics",
+  "name": "Clinical and cancer genomics",
+  "intro": "Terminology used when genomic information informs diagnosis, screening and cancer care, including variant classification, penetrance, tumour evolution and the limits of what a genomic result can establish."
+ },
+ {
+  "slug": "pathogen-genomics",
+  "name": "Pathogen genomics",
+  "intro": "Sequencing and analysis of bacteria, viruses, fungi and parasites for outbreak investigation, antimicrobial resistance surveillance and public health decision-making."
+ },
+ {
+  "slug": "sequencing-laboratory-methods",
+  "name": "Sequencing and laboratory methods",
+  "intro": "How genomic data is produced: extraction, library preparation, sequencing chemistries and platforms, quality control and the measurements that describe a run."
+ },
+ {
+  "slug": "bioinformatics-statistics",
+  "name": "Bioinformatics and statistics",
+  "intro": "File formats, alignment, assembly, variant calling, workflows and reproducibility, together with the statistical ideas needed to interpret genomic results honestly."
+ },
+ {
+  "slug": "pharmacogenomics",
+  "name": "Pharmacogenomics",
+  "intro": "How inherited variation affects the way medicines are processed and tolerated, the nomenclature used to describe it, and the guidelines that translate genotype into prescribing advice."
+ },
+ {
+  "slug": "ethics-data-governance",
+  "name": "Ethics and data governance",
+  "intro": "Consent, data sharing, access control, equitable partnership and the legal and ethical frameworks that govern genomic data and samples."
+ }
+]

@@ -1,0 +1,46 @@
+{
+ "pages": {
+  "about": {
+   "title": "About the project",
+   "description": "Purpose, audiences, editorial model, ownership and current status of The Genomics Dictionary."
+  },
+  "contribute": {
+   "title": "Contribute",
+   "description": "How to suggest a term, draft an entry or join the scientific review panel."
+  },
+  "donate": {
+   "title": "Support the dictionary",
+   "description": "How donations will be used, and the current status of the donation facility."
+  },
+  "contact": {
+   "title": "Contact",
+   "description": "How to reach the project about content, collaboration or corrections."
+  },
+  "report-error": {
+   "title": "Report an error",
+   "description": "Report an inaccuracy in a dictionary entry, with the term and revision recorded."
+  }
+ },
+ "policies": {
+  "editorial": {
+   "title": "Editorial policy",
+   "description": "How entries are drafted, reviewed, approved, published, corrected and withdrawn."
+  },
+  "privacy": {
+   "title": "Privacy",
+   "description": "What this website collects, what it does not, and which decisions are still outstanding."
+  },
+  "reuse": {
+   "title": "Terms and reuse",
+   "description": "How dictionary content may be reused, and the status of the content licence."
+  },
+  "accessibility": {
+   "title": "Accessibility",
+   "description": "Accessibility target, what has been tested, and known limitations."
+  },
+  "donation-information": {
+   "title": "Donation information",
+   "description": "Who receives donations, how they are processed and what the project does not claim."
+  }
+ }
+}

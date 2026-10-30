@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P value · The Genomics Dictionary</title>
+<meta name="description" content="A p-value is the probability of observing data at least as extreme as those collected, if the hypothesis of no effect were true and the statistical model were correct. A small p-value means the data would be surprising under that assumption. It does not give the probability that the hypothesis is tr">
+<meta property="og:title" content="P value · The Genomics Dictionary">
+<meta property="og:description" content="A p-value is the probability of observing data at least as extreme as those collected, if the hypothesis of no effect were true and the statistical model were correct. A small p-value means the data would be surprising under that assumption. It does not give the probability that the hypothesis is tr">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/p-value/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "P value", "description": "A p-value is the probability of observing data at least as extreme as those collected, if the hypothesis of no effect were true and the statistical model were correct. A small p-value means the data would be surprising under that assumption. It does not give the probability that the hypothesis is true, nor does it measure how large or important an effect is.", "identifier": "GD-0164", "url": "https://babasaraki.github.io/genomics-dictionary/terms/p-value/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>P value</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">A p-value is the probability of observing data at least as extreme as those collected, if the hypothesis of no effect were true and the statistical model were correct. A small p-value means the data would be surprising under that assumption. It does not give the probability that the hypothesis is true, nor does it measure how large or important an effect is.</p>
+
+        <h2>Technical explanation</h2>
+        <p>The p-value is computed from a test statistic under a specified null model, and its interpretation depends entirely on that model being appropriate and on the analysis having been specified in advance. Professional statistical bodies have set out the resulting cautions explicitly: a p-value is not the probability that the null hypothesis is true, a threshold such as 0.05 is a convention rather than a boundary between real and unreal effects, and conclusions should not rest on whether a value falls either side of it. Two further issues dominate genomic work. Sample size drives the p-value as much as effect size, so with very large cohorts negligible differences reach extreme significance while small studies miss substantial effects. And p-values are valid only for the tests that were planned; selecting variables, outcomes or subgroups after seeing the data, or running many tests and reporting the smallest value, invalidates the calculation. Good practice reports the effect estimate with its confidence interval alongside the p-value, and states how many tests were performed.</p>
+
+        <h2>Practical example</h2>
+        <p>A cohort analysis of a hundred thousand participants finds an association with a p-value below one in a million, but the effect corresponds to a fraction of a percentage point of difference in risk. The authors report the effect size and interval prominently, so readers can see that the association is precisely estimated and small, rather than large because it is highly significant.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>A p-value above 0.05 is routinely reported as showing there is no effect. It shows only that the data are compatible with no effect; a small or imprecise study is compatible with a wide range of effects, including important ones. Absence of significance is not evidence of absence, and the confidence interval usually makes this visible.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/confidence-interval/">Confidence interval</a></li><li><a href="../../terms/multiple-testing-correction/">Multiple testing correction</a></li><li><a href="../../terms/false-discovery-rate/">False discovery rate</a></li><li><a href="../../terms/association-versus-causation/">Association versus causation</a></li><li><a href="../../terms/odds-ratio/">Odds ratio</a></li><li><a href="../../terms/genome-wide-association-study/">Genome-wide association study</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>The ASA Statement on p -Values: Context, Process, and Purpose. <em>The American Statistician</em>. 2016. doi:10.1080/00031305.2016.1154108 <a href="https://doi.org/10.1080/00031305.2016.1154108" rel="noopener">https://doi.org/10.1080/00031305.2016.1154108</a></li><li>Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing. <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>. 1995. doi:10.1111/j.2517-6161.1995.tb02031.x <a href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x" rel="noopener">https://doi.org/10.1111/j.2517-6161.1995.tb02031.x</a></li><li>10 Years of GWAS Discovery: Biology, Function, and Translation. <em>The American Journal of Human Genetics</em>. 2017. doi:10.1016/j.ajhg.2017.06.005 <a href="https://doi.org/10.1016/j.ajhg.2017.06.005" rel="noopener">https://doi.org/10.1016/j.ajhg.2017.06.005</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0164</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">P value. The Genomics Dictionary. Entry GD-0164, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/p-value/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=p-value&amp;entry_id=GD-0164&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

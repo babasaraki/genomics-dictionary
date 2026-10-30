@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /tools/
+Disallow: /content/
+Sitemap: https://babasaraki.github.io/genomics-dictionary/sitemap.xml

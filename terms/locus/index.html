@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Locus · The Genomics Dictionary</title>
+<meta name="description" content="A locus is a specific location in the genome, described by the chromosome it sits on and its position along that chromosome. A locus can be as small as a single base or as large as a whole gene or region. The plural is loci. Giving a locus precisely requires stating which reference assembly the coor">
+<meta property="og:title" content="Locus · The Genomics Dictionary">
+<meta property="og:description" content="A locus is a specific location in the genome, described by the chromosome it sits on and its position along that chromosome. A locus can be as small as a single base or as large as a whole gene or region. The plural is loci. Giving a locus precisely requires stating which reference assembly the coor">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/locus/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Locus", "description": "A locus is a specific location in the genome, described by the chromosome it sits on and its position along that chromosome. A locus can be as small as a single base or as large as a whole gene or region. The plural is loci. Giving a locus precisely requires stating which reference assembly the coordinates refer to.", "identifier": "GD-0009", "url": "https://babasaraki.github.io/genomics-dictionary/terms/locus/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Locus</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/genetics-foundations/">Genetics foundations</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">A locus is a specific location in the genome, described by the chromosome it sits on and its position along that chromosome. A locus can be as small as a single base or as large as a whole gene or region. The plural is loci. Giving a locus precisely requires stating which reference assembly the coordinates refer to.</p>
+
+        <h2>Technical explanation</h2>
+        <p>A locus is defined by genomic coordinates, and coordinates are meaningful only with respect to a named assembly, because positions shift between assembly versions. Analysts therefore record the assembly alongside any coordinate and convert between assemblies explicitly rather than assuming equivalence. Loci may be described functionally as gene loci, regulatory loci or association loci. In genome-wide association studies a reported locus is usually a region of linkage disequilibrium rather than a causal base, so the lead marker marks a neighbourhood in which the causal variant may lie, and fine-mapping is required before any gene is implicated. In pathogen genomics, loci are the typing targets of schemes such as multilocus sequence typing, where defined gene fragments are compared across isolates. A practical limitation is that paralogous and repetitive sequence can make locus assignment ambiguous: reads from one region may map to another, producing apparent variants that are artefacts of position rather than of sequence.</p>
+
+        <h2>Practical example</h2>
+        <p>An analyst receives a variant list in coordinates from an older human assembly and lifts it over to the current one before comparing with a clinical database. Two variants fail to convert because the surrounding region was reorganised between assemblies, so the analyst inspects those positions manually instead of silently dropping them from the comparison.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>A locus is often confused with a gene. Many loci lie outside genes entirely, in regulatory or intergenic sequence, and an association signal at a locus does not identify which gene it acts on. A further error is quoting coordinates without the assembly version, which makes a position ambiguous and can send a reader to the wrong part of the genome.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/gene/">Gene</a></li><li><a href="../../terms/allele/">Allele</a></li><li><a href="../../terms/chromosome/">Chromosome</a></li><li><a href="../../terms/genome-wide-association-study/">Genome-wide association study</a></li><li><a href="../../terms/linkage-disequilibrium/">Linkage disequilibrium</a></li><li><a href="../../terms/reference-genome/">Reference genome</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Locus — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Locus" rel="noopener">https://www.genome.gov/genetics-glossary/Locus</a></li><li>Ensembl genome browser. <em>EMBL-EBI</em>. <a href="https://www.ensembl.org/index.html" rel="noopener">https://www.ensembl.org/index.html</a></li><li>10 Years of GWAS Discovery: Biology, Function, and Translation. <em>The American Journal of Human Genetics</em>. 2017. doi:10.1016/j.ajhg.2017.06.005 <a href="https://doi.org/10.1016/j.ajhg.2017.06.005" rel="noopener">https://doi.org/10.1016/j.ajhg.2017.06.005</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0009</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Locus. The Genomics Dictionary. Entry GD-0009, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/locus/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=locus&amp;entry_id=GD-0009&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nanopore sequencing · The Genomics Dictionary</title>
+<meta name="description" content="Nanopore sequencing reads DNA or RNA by pulling a single strand through a tiny protein pore in a membrane. As each part of the strand passes through, it changes an electrical current in a characteristic way, and software converts that changing signal into a sequence of bases. The devices are small a">
+<meta property="og:title" content="Nanopore sequencing · The Genomics Dictionary">
+<meta property="og:description" content="Nanopore sequencing reads DNA or RNA by pulling a single strand through a tiny protein pore in a membrane. As each part of the strand passes through, it changes an electrical current in a characteristic way, and software converts that changing signal into a sequence of bases. The devices are small a">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/nanopore-sequencing/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Nanopore sequencing", "description": "Nanopore sequencing reads DNA or RNA by pulling a single strand through a tiny protein pore in a membrane. As each part of the strand passes through, it changes an electrical current in a characteristic way, and software converts that changing signal into a sequence of bases. The devices are small and produce data as the run proceeds.", "identifier": "GD-0122", "url": "https://babasaraki.github.io/genomics-dictionary/terms/nanopore-sequencing/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Nanopore sequencing</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/sequencing-laboratory-methods/">Sequencing and laboratory methods</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Nanopore sequencing reads DNA or RNA by pulling a single strand through a tiny protein pore in a membrane. As each part of the strand passes through, it changes an electrical current in a characteristic way, and software converts that changing signal into a sequence of bases. The devices are small and produce data as the run proceeds.</p>
+
+        <h2>Technical explanation</h2>
+        <p>Nanopore sequencing measures the ionic current through a biological pore held in an electrically resistant membrane as a nucleic acid strand is ratcheted through by a motor protein. The current is modulated by the stretch of bases occupying the pore, and a neural network model converts the raw signal trace into base calls. Because the strand is read intact, read length is set by the input molecule rather than the chemistry, and reads of tens to hundreds of kilobases are achievable with careful extraction. Data stream in real time, which allows a run to be stopped once sufficient coverage is reached and supports adaptive sampling, where a target region is enriched by rejecting unwanted molecules at the pore. Native strands are read directly, so base modifications can be inferred from the signal. The instruments are portable and have been used for field pathogen surveillance. Limitations include higher raw per-read error than short-read platforms, systematic difficulty with homopolymer runs, dependence of accuracy on the basecalling model version, and sensitivity of yield to DNA purity and pore occupancy.</p>
+
+        <h2>Practical example</h2>
+        <p>During an outbreak response in a district laboratory with limited infrastructure, amplicons from patient samples are barcoded, loaded onto a portable nanopore device and sequenced on site. Consensus genomes are generated within the same working day and shared with the national reference laboratory, informing the investigation while transport of samples to a central facility would still have been in progress.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Because nanopore devices are small and inexpensive, they are sometimes assumed to be lower-grade instruments. Portability is a design choice, not a measure of data quality. What genuinely differs is the error profile: errors are distributed differently from short-read platforms and depend on the basecalling model, so the analysis chosen must suit that profile rather than being transferred unchanged.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/long-read-sequencing/">Long-read sequencing</a></li><li><a href="../../terms/amplicon-sequencing/">Amplicon sequencing</a></li><li><a href="../../terms/genomic-surveillance/">Genomic surveillance</a></li><li><a href="../../terms/consensus-sequence/">Consensus sequence</a></li><li><a href="../../terms/phred-quality-score/">Phred quality score</a></li><li><a href="../../terms/dna-methylation/">DNA methylation</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Nanopore DNA Sequencing — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Nanopore-DNA-Sequencing" rel="noopener">https://www.genome.gov/genetics-glossary/Nanopore-DNA-Sequencing</a></li><li>Nanopore sequencing and assembly of a human genome with ultra-long reads. <em>Nature Biotechnology</em>. 2018. doi:10.1038/nbt.4060 <a href="https://doi.org/10.1038/nbt.4060" rel="noopener">https://doi.org/10.1038/nbt.4060</a></li><li>Long-read human genome sequencing and its applications. <em>Nature Reviews Genetics</em>. 2020. doi:10.1038/s41576-020-0236-x <a href="https://doi.org/10.1038/s41576-020-0236-x" rel="noopener">https://doi.org/10.1038/s41576-020-0236-x</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0122</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Nanopore sequencing. The Genomics Dictionary. Entry GD-0122, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/nanopore-sequencing/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=nanopore-sequencing&amp;entry_id=GD-0122&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

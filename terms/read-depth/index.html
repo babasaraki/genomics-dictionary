@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Read depth · The Genomics Dictionary</title>
+<meta name="description" content="Read depth is the number of sequencing reads that cover a particular position in the genome. A position covered by thirty reads is said to have thirty-fold depth. Greater depth gives more confidence that a difference seen at that position is real rather than an error, and it is usually reported as a">
+<meta property="og:title" content="Read depth · The Genomics Dictionary">
+<meta property="og:description" content="Read depth is the number of sequencing reads that cover a particular position in the genome. A position covered by thirty reads is said to have thirty-fold depth. Greater depth gives more confidence that a difference seen at that position is real rather than an error, and it is usually reported as a">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/read-depth/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Read depth", "description": "Read depth is the number of sequencing reads that cover a particular position in the genome. A position covered by thirty reads is said to have thirty-fold depth. Greater depth gives more confidence that a difference seen at that position is real rather than an error, and it is usually reported as an average across the target region.", "identifier": "GD-0129", "url": "https://babasaraki.github.io/genomics-dictionary/terms/read-depth/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Read depth</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/sequencing-laboratory-methods/">Sequencing and laboratory methods</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Read depth is the number of sequencing reads that cover a particular position in the genome. A position covered by thirty reads is said to have thirty-fold depth. Greater depth gives more confidence that a difference seen at that position is real rather than an error, and it is usually reported as an average across the target region.</p>
+
+        <h2>Technical explanation</h2>
+        <p>Read depth at a position is the count of reads overlapping it after mapping and, conventionally, after duplicate marking and quality filtering, so raw and filtered depth can differ substantially. Depth determines the statistical power to detect a variant and the confidence with which a genotype is assigned: detecting a heterozygous germline variant reliably requires far less depth than detecting a somatic variant present in a small fraction of molecules, which is why tumour and cell-free DNA assays are run at much higher depth than germline genome sequencing. Depth is never uniform. Composition bias, capture efficiency, mappability and amplification all create regions that are systematically shallow, so a mean depth across a target conceals the distribution that actually matters. Laboratories therefore specify minimum depth per base and the proportion of target bases meeting it, rather than an average alone. Increasing depth has limits: it reduces sampling error but cannot overcome systematic artefacts, and beyond the point where errors are correlated rather than independent, additional reads add little information.</p>
+
+        <h2>Practical example</h2>
+        <p>A diagnostic panel specifies that every reported base must be covered by at least a stated minimum number of reads. In one sample the mean depth across the panel is comfortably high, yet two exons fall below the threshold because of a difficult base composition. Those exons are filled in by a separate amplicon assay rather than reported as uninformative.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Mean depth is often taken as a guarantee that every target base was adequately read. Coverage is uneven, so a high average can coexist with regions that have almost no reads. A region with insufficient depth has not been shown to be free of variants; it has simply not been examined properly, and the two should never be reported as equivalent.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/coverage-breadth/">Breadth of coverage</a></li><li><a href="../../terms/sequencing-read/">Read</a></li><li><a href="../../terms/variant-calling/">Variant calling</a></li><li><a href="../../terms/targeted-panel-sequencing/">Targeted panel sequencing</a></li><li><a href="../../terms/whole-genome-sequencing/">Whole-genome sequencing</a></li><li><a href="../../terms/sensitivity-and-specificity/">Sensitivity and specificity</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>The Genome Analysis Toolkit: A MapReduce framework for analyzing next-generation DNA sequencing data. <em>Genome Research</em>. 2010. doi:10.1101/gr.107524.110 <a href="https://doi.org/10.1101/gr.107524.110" rel="noopener">https://doi.org/10.1101/gr.107524.110</a></li><li>Twelve years of SAMtools and BCFtools. <em>GigaScience</em>. 2021. doi:10.1093/gigascience/giab008 <a href="https://doi.org/10.1093/gigascience/giab008" rel="noopener">https://doi.org/10.1093/gigascience/giab008</a></li><li>DNA Sequencing — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/DNA-Sequencing" rel="noopener">https://www.genome.gov/genetics-glossary/DNA-Sequencing</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0129</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Read depth. The Genomics Dictionary. Entry GD-0129, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/read-depth/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=read-depth&amp;entry_id=GD-0129&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Computational reproducibility · The Genomics Dictionary</title>
+<meta name="description" content="Computational reproducibility means that someone else, given the same data and the same description of the analysis, obtains the same results. It is a weaker and more achievable goal than replication, which asks whether a finding holds in a new experiment with new samples. Reproducibility is about t">
+<meta property="og:title" content="Computational reproducibility · The Genomics Dictionary">
+<meta property="og:description" content="Computational reproducibility means that someone else, given the same data and the same description of the analysis, obtains the same results. It is a weaker and more achievable goal than replication, which asks whether a finding holds in a new experiment with new samples. Reproducibility is about t">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/reproducibility/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Computational reproducibility", "description": "Computational reproducibility means that someone else, given the same data and the same description of the analysis, obtains the same results. It is a weaker and more achievable goal than replication, which asks whether a finding holds in a new experiment with new samples. Reproducibility is about the transparency of the computation, not about whether the conclusion is true.", "identifier": "GD-0161", "url": "https://babasaraki.github.io/genomics-dictionary/terms/reproducibility/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Computational reproducibility</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <a class="chip" href="../../subjects/ethics-data-governance/">Ethics and data governance</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Computational reproducibility means that someone else, given the same data and the same description of the analysis, obtains the same results. It is a weaker and more achievable goal than replication, which asks whether a finding holds in a new experiment with new samples. Reproducibility is about the transparency of the computation, not about whether the conclusion is true.</p>
+
+        <h2>Technical explanation</h2>
+        <p>Achieving reproducibility in genomics requires several things together: the input data deposited in an archive under an accession, the analysis expressed as code rather than as interactive clicks, software versions pinned through environment specifications or container digests, reference genome and annotation builds recorded explicitly, random seeds fixed where stochastic methods are used, and the whole lot tracked in version control with a citable release. Workflow managers help by making the step graph explicit and the execution portable. Perfect bitwise identity is not always attainable, since multithreading can change floating-point summation order and some tools depend on hardware instructions, so the practical standard is that scientific conclusions are stable rather than that every byte matches. The common failure modes are mundane: an undocumented manual filtering step, a reference file that has since been replaced at the same path, a tool installed from a moving channel, and parameters recorded in a methods section as defaults when the defaults have since changed. Reproducibility is also a prerequisite for meaningful review, because an analysis that cannot be rerun cannot be checked.</p>
+
+        <h2>Practical example</h2>
+        <p>A team revisits an expression analysis published three years earlier in order to extend it. Because the repository pins the annotation release, the container digest and the random seed, the original figures regenerate exactly, and the new samples can be added with confidence that any change in the results comes from the data rather than from the software.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Depositing code is often equated with making an analysis reproducible. Code alone rarely suffices: without the data, the software versions, the reference build and the parameters actually used, a script may not run at all, or may run and give different numbers. Reproducibility also says nothing about whether the method was appropriate.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/version-control/">Version control</a></li><li><a href="../../terms/containerisation/">Containerisation</a></li><li><a href="../../terms/workflow-manager/">Workflow manager</a></li><li><a href="../../terms/fair-principles/">FAIR principles</a></li><li><a href="../../terms/data-sharing/">Data sharing</a></li><li><a href="../../terms/bioinformatics/">Bioinformatics</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>The FAIR Guiding Principles for scientific data management and stewardship. <em>Scientific Data</em>. 2016. doi:10.1038/sdata.2016.18 <a href="https://doi.org/10.1038/sdata.2016.18" rel="noopener">https://doi.org/10.1038/sdata.2016.18</a></li><li>Nextflow enables reproducible computational workflows. <em>Nature Biotechnology</em>. 2017. doi:10.1038/nbt.3820 <a href="https://doi.org/10.1038/nbt.3820" rel="noopener">https://doi.org/10.1038/nbt.3820</a></li><li>Sustainable data analysis with Snakemake. <em>F1000Research</em>. 2021. doi:10.12688/f1000research.29032.2 <a href="https://doi.org/10.12688/f1000research.29032.2" rel="noopener">https://doi.org/10.12688/f1000research.29032.2</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0161</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Computational reproducibility. The Genomics Dictionary. Entry GD-0161, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/reproducibility/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=reproducibility&amp;entry_id=GD-0161&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

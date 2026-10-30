@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>False discovery rate · The Genomics Dictionary</title>
+<meta name="description" content="The false discovery rate, abbreviated FDR, is the expected proportion of mistakes among the results a study declares positive. If a list of one hundred differentially expressed genes is reported at a five per cent false discovery rate, about five of them are expected to be false findings. It describ">
+<meta property="og:title" content="False discovery rate · The Genomics Dictionary">
+<meta property="og:description" content="The false discovery rate, abbreviated FDR, is the expected proportion of mistakes among the results a study declares positive. If a list of one hundred differentially expressed genes is reported at a five per cent false discovery rate, about five of them are expected to be false findings. It describ">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/false-discovery-rate/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "False discovery rate", "description": "The false discovery rate, abbreviated FDR, is the expected proportion of mistakes among the results a study declares positive. If a list of one hundred differentially expressed genes is reported at a five per cent false discovery rate, about five of them are expected to be false findings. It describes the quality of a list rather than the status of any single item.", "identifier": "GD-0163", "url": "https://babasaraki.github.io/genomics-dictionary/terms/false-discovery-rate/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}, "alternateName": "FDR"}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>False discovery rate</h1>
+        <p class="acronym">FDR</p>
+        <p class="entry-meta"><a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">The false discovery rate, abbreviated FDR, is the expected proportion of mistakes among the results a study declares positive. If a list of one hundred differentially expressed genes is reported at a five per cent false discovery rate, about five of them are expected to be false findings. It describes the quality of a list rather than the status of any single item.</p>
+
+        <h2>Technical explanation</h2>
+        <p>The false discovery rate reframes multiple testing: instead of avoiding any false positive, it accepts a controlled fraction of them in exchange for much greater power. The Benjamini-Hochberg procedure ranks the p-values, compares each with a threshold that increases with rank, and declares significant all tests up to the largest one that passes. Adjusted values produced this way are often called q-values, and tools for expression analysis report them routinely. Methods that estimate the proportion of true null hypotheses can increase power further. Three points are commonly missed in practice. The guarantee is an average over the whole list, so it says nothing about whether a particular gene is a true finding, and the gene at the threshold is much more likely to be a false positive than the top-ranked one. The procedure assumes p-values are correctly calibrated, which fails when the underlying model is misspecified or batch structure is ignored, in which case the nominal rate is meaningless. And filtering or selecting tests after inspecting the data invalidates the control.</p>
+
+        <h2>Practical example</h2>
+        <p>An analysis of a bacterial transcriptomics experiment yields two hundred genes at a five per cent false discovery rate. The team treats this as a screening list of which roughly ten entries are expected to be spurious, and designs confirmatory assays for the handful of candidates that are both strongly ranked and biologically plausible, rather than claiming all two hundred.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>An adjusted value of 0.05 is often read as a five per cent chance that this particular gene is a false positive. It is not a per-gene probability; it is a property of the whole list at that threshold. Items near the cut-off are much less reliable than items far above it, even though they share the same label.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/multiple-testing-correction/">Multiple testing correction</a></li><li><a href="../../terms/p-value/">P value</a></li><li><a href="../../terms/differential-expression/">Differential expression</a></li><li><a href="../../terms/confidence-interval/">Confidence interval</a></li><li><a href="../../terms/normalisation/">Normalisation</a></li><li><a href="../../terms/batch-effect/">Batch effect</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing. <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>. 1995. doi:10.1111/j.2517-6161.1995.tb02031.x <a href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x" rel="noopener">https://doi.org/10.1111/j.2517-6161.1995.tb02031.x</a></li><li>Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. <em>Genome Biology</em>. 2014. doi:10.1186/s13059-014-0550-8 <a href="https://doi.org/10.1186/s13059-014-0550-8" rel="noopener">https://doi.org/10.1186/s13059-014-0550-8</a></li><li>limma powers differential expression analyses for RNA-sequencing and microarray studies. <em>Nucleic Acids Research</em>. 2015. doi:10.1093/nar/gkv007 <a href="https://doi.org/10.1093/nar/gkv007" rel="noopener">https://doi.org/10.1093/nar/gkv007</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0163</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">False discovery rate. The Genomics Dictionary. Entry GD-0163, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/false-discovery-rate/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=false-discovery-rate&amp;entry_id=GD-0163&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

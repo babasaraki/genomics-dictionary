@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polygenic risk score · The Genomics Dictionary</title>
+<meta name="description" content="A polygenic risk score, or PRS, adds up the small contributions of many genetic variants to give a single number summarising how a person&#x27;s genome compares with others for a trait. It is a relative ranking within a reference group, not a diagnosis or a prediction of what will happen. For most common">
+<meta property="og:title" content="Polygenic risk score · The Genomics Dictionary">
+<meta property="og:description" content="A polygenic risk score, or PRS, adds up the small contributions of many genetic variants to give a single number summarising how a person&#x27;s genome compares with others for a trait. It is a relative ranking within a reference group, not a diagnosis or a prediction of what will happen. For most common">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/polygenic-risk-score/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Polygenic risk score", "description": "A polygenic risk score, or PRS, adds up the small contributions of many genetic variants to give a single number summarising how a person's genome compares with others for a trait. It is a relative ranking within a reference group, not a diagnosis or a prediction of what will happen. For most common traits, non-genetic factors account for a large share of the variation between people.", "identifier": "GD-0052", "url": "https://babasaraki.github.io/genomics-dictionary/terms/polygenic-risk-score/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}, "alternateName": "PRS"}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Polygenic risk score</h1>
+        <p class="acronym">PRS</p>
+        <p class="entry-meta"><a class="chip" href="../../subjects/human-population-genomics/">Human and population genomics</a> <a class="chip" href="../../subjects/clinical-cancer-genomics/">Clinical and cancer genomics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">A polygenic risk score, or PRS, adds up the small contributions of many genetic variants to give a single number summarising how a person&#x27;s genome compares with others for a trait. It is a relative ranking within a reference group, not a diagnosis or a prediction of what will happen. For most common traits, non-genetic factors account for a large share of the variation between people.</p>
+
+        <h2>Technical explanation</h2>
+        <p>A polygenic score is typically a weighted sum of allele counts, with weights taken from GWAS summary statistics and adjusted for linkage disequilibrium by clumping and thresholding or by Bayesian shrinkage. Performance is reported as variance explained, area under the receiver operating characteristic curve, or odds ratio per standard deviation, always relative to the distribution in a specified population. The raw score is dimensionless and interpretable only after standardisation against that reference. Portability is the central problem: scores derived in European-ancestry cohorts lose accuracy when applied to people of other ancestries, because tagging variants sit in different linkage disequilibrium with causal variants, allele frequencies differ, and effect estimates may not transfer. Deploying such scores without ancestry-appropriate derivation and validation risks widening rather than narrowing health inequalities. Further limitations include ascertainment and environmental confounding in the discovery cohort, poor calibration at the extremes of the distribution, and the fact that a score describes a population-level risk gradient rather than an individual trajectory.</p>
+
+        <h2>Practical example</h2>
+        <p>A biobank analysis reports that participants in the highest few per cent of a polygenic score distribution have appreciably greater relative risk of a common condition than those at the median. When the same score is applied, without re-derivation, to a cohort of different genetic ancestry, its ability to discriminate falls substantially, illustrating why ancestry-matched validation is required before any applied use.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Polygenic scores are often read as personal verdicts, with a high score meaning disease is certain and a low score meaning safety. A score places someone on a distribution relative to a reference population. Most people in a high-scoring band never develop the condition, many who do have unremarkable scores, and the score identifies no individual causal variant.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/genome-wide-association-study/">Genome-wide association study</a></li><li><a href="../../terms/heritability/">Heritability</a></li><li><a href="../../terms/genetic-ancestry/">Genetic ancestry</a></li><li><a href="../../terms/association-versus-causation/">Association versus causation</a></li><li><a href="../../terms/odds-ratio/">Odds ratio</a></li><li><a href="../../terms/clinical-actionability/">Clinical actionability</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Polygenic Risk Score PRS — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Polygenic-Risk-Score-PRS" rel="noopener">https://www.genome.gov/genetics-glossary/Polygenic-Risk-Score-PRS</a></li><li>Clinical use of current polygenic risk scores may exacerbate health disparities. <em>Nature Genetics</em>. 2019. doi:10.1038/s41588-019-0379-x <a href="https://doi.org/10.1038/s41588-019-0379-x" rel="noopener">https://doi.org/10.1038/s41588-019-0379-x</a></li><li>Tutorial: a guide to performing polygenic risk score analyses. <em>Nature Protocols</em>. 2020. doi:10.1038/s41596-020-0353-1 <a href="https://doi.org/10.1038/s41596-020-0353-1" rel="noopener">https://doi.org/10.1038/s41596-020-0353-1</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0052</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Polygenic risk score. The Genomics Dictionary. Entry GD-0052, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/polygenic-risk-score/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=polygenic-risk-score&amp;entry_id=GD-0052&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

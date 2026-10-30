@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linkage disequilibrium · The Genomics Dictionary</title>
+<meta name="description" content="Linkage disequilibrium, or LD, means that particular versions of two nearby DNA positions turn up together more often than chance alone would predict. It arises because stretches of chromosome are passed down intact, and recombination only occasionally shuffles them. LD generally weakens with distan">
+<meta property="og:title" content="Linkage disequilibrium · The Genomics Dictionary">
+<meta property="og:description" content="Linkage disequilibrium, or LD, means that particular versions of two nearby DNA positions turn up together more often than chance alone would predict. It arises because stretches of chromosome are passed down intact, and recombination only occasionally shuffles them. LD generally weakens with distan">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/linkage-disequilibrium/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Linkage disequilibrium", "description": "Linkage disequilibrium, or LD, means that particular versions of two nearby DNA positions turn up together more often than chance alone would predict. It arises because stretches of chromosome are passed down intact, and recombination only occasionally shuffles them. LD generally weakens with distance along the chromosome and with the number of generations since the alleles first appeared together.", "identifier": "GD-0042", "url": "https://babasaraki.github.io/genomics-dictionary/terms/linkage-disequilibrium/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}, "alternateName": "LD"}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Linkage disequilibrium</h1>
+        <p class="acronym">LD</p>
+        <p class="entry-meta"><a class="chip" href="../../subjects/human-population-genomics/">Human and population genomics</a> <a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Linkage disequilibrium, or LD, means that particular versions of two nearby DNA positions turn up together more often than chance alone would predict. It arises because stretches of chromosome are passed down intact, and recombination only occasionally shuffles them. LD generally weakens with distance along the chromosome and with the number of generations since the alleles first appeared together.</p>
+
+        <h2>Technical explanation</h2>
+        <p>LD is the non-random association of alleles at different loci, summarised most often by the coefficients D prime and r squared. These capture different things: D prime close to one indicates that few recombination events separate the loci, whereas r squared measures how well one variant predicts another and therefore governs statistical power when a genotyped marker stands in for an untyped causal variant. LD structure differs between populations because it records demographic history. Populations that passed through narrow bottlenecks carry long haplotype blocks, whereas African populations, with larger long-term effective size and more accumulated recombination, generally show shorter-range LD. That difference cuts both ways: association signals are easier to localise, but more markers are needed for equivalent genome-wide coverage. LD underpins array-based association studies, genotype imputation and fine-mapping. Its principal limitation is that it identifies a correlated interval rather than a causal base, so the lead variant at an associated locus is frequently not the functional one.</p>
+
+        <h2>Practical example</h2>
+        <p>A fine-mapping team follows up an association signal and finds forty variants in near-perfect LD across a few hundred kilobases, all with similar association statistics. Statistics alone cannot separate them. Adding data from a population with shorter-range LD breaks the correlation apart and narrows the credible set to a handful of candidates that can realistically be taken forward for functional testing.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>A common error is reading linkage disequilibrium as evidence that two variants interact biologically, or that the top-ranked variant at a locus must be the causal one. LD is a statement about inheritance patterns in a population, not about molecular function. It also varies between populations, so a proxy marker chosen in one cohort may fail to tag the same variant in another.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/haplotype/">Haplotype</a></li><li><a href="../../terms/single-nucleotide-polymorphism/">Single-nucleotide polymorphism</a></li><li><a href="../../terms/genome-wide-association-study/">Genome-wide association study</a></li><li><a href="../../terms/genotype-imputation/">Genotype imputation</a></li><li><a href="../../terms/genetic-recombination/">Genetic recombination</a></li><li><a href="../../terms/effective-population-size/">Effective population size</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Linkage — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Linkage" rel="noopener">https://www.genome.gov/genetics-glossary/Linkage</a></li><li>A global reference for human genetic variation. <em>Nature</em>. 2015. doi:10.1038/nature15393 <a href="https://doi.org/10.1038/nature15393" rel="noopener">https://doi.org/10.1038/nature15393</a></li><li>10 Years of GWAS Discovery: Biology, Function, and Translation. <em>The American Journal of Human Genetics</em>. 2017. doi:10.1016/j.ajhg.2017.06.005 <a href="https://doi.org/10.1016/j.ajhg.2017.06.005" rel="noopener">https://doi.org/10.1016/j.ajhg.2017.06.005</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0042</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Linkage disequilibrium. The Genomics Dictionary. Entry GD-0042, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/linkage-disequilibrium/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=linkage-disequilibrium&amp;entry_id=GD-0042&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

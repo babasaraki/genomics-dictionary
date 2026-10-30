@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Centromere · The Genomics Dictionary</title>
+<meta name="description" content="A centromere is the constricted region of a chromosome where the two copies produced by DNA replication are held together and where the cell attaches the machinery that pulls them apart during division. Its position gives each chromosome a characteristic shape under the microscope. Centromeres conta">
+<meta property="og:title" content="Centromere · The Genomics Dictionary">
+<meta property="og:description" content="A centromere is the constricted region of a chromosome where the two copies produced by DNA replication are held together and where the cell attaches the machinery that pulls them apart during division. Its position gives each chromosome a characteristic shape under the microscope. Centromeres conta">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/centromere/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Centromere", "description": "A centromere is the constricted region of a chromosome where the two copies produced by DNA replication are held together and where the cell attaches the machinery that pulls them apart during division. Its position gives each chromosome a characteristic shape under the microscope. Centromeres contain long stretches of highly repetitive DNA that are difficult to sequence.", "identifier": "GD-0038", "url": "https://babasaraki.github.io/genomics-dictionary/terms/centromere/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Centromere</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/genetics-foundations/">Genetics foundations</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">A centromere is the constricted region of a chromosome where the two copies produced by DNA replication are held together and where the cell attaches the machinery that pulls them apart during division. Its position gives each chromosome a characteristic shape under the microscope. Centromeres contain long stretches of highly repetitive DNA that are difficult to sequence.</p>
+
+        <h2>Technical explanation</h2>
+        <p>The centromere is the chromosomal locus at which the kinetochore assembles and spindle microtubules attach, ensuring accurate segregation. In humans, centromeric regions comprise megabases of alpha satellite higher-order repeat arrays, and centromere identity is specified epigenetically by nucleosomes containing the histone variant CENP-A rather than by sequence alone, as shown by neocentromeres that form at non-satellite positions. These repeat arrays defeated short-read assembly for decades and appeared as gaps in reference assemblies until long-read methods produced complete representations. Errors in centromere function cause missegregation and contribute to aneuploidy in germ cells and to chromosomal instability in tumours. Analytically, repetitive centromeric sequence attracts mismapped reads and spurious variant calls, so pipelines routinely exclude these regions using blacklists, with the consequence that variation within them has been systematically understudied rather than shown to be absent.</p>
+
+        <h2>Practical example</h2>
+        <p>An analyst inspecting apparent variant clusters in a sequencing dataset finds many calls concentrated in satellite repeat regions near centromeres with unusual read depth and mapping quality. Applying the pipeline&#x27;s region exclusion list removes these artefacts, and the analyst records that variation in those regions is unassessed rather than reported as absent.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Centromeres are often assumed to be defined by their DNA sequence and to sit at the middle of every chromosome. Position varies, including near one end in acrocentric chromosomes, and centromere identity is maintained epigenetically. Treating these regions as uninformative is a further error; they were excluded for technical reasons that newer sequencing methods are now addressing.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/chromosome/">Chromosome</a></li><li><a href="../../terms/telomere/">Telomere</a></li><li><a href="../../terms/karyotype/">Karyotype</a></li><li><a href="../../terms/aneuploidy/">Aneuploidy</a></li><li><a href="../../terms/meiosis/">Meiosis</a></li><li><a href="../../terms/long-read-sequencing/">Long-read sequencing</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Centromere — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Centromere" rel="noopener">https://www.genome.gov/genetics-glossary/Centromere</a></li><li>Chromosome — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Chromosome" rel="noopener">https://www.genome.gov/genetics-glossary/Chromosome</a></li><li>The complete sequence of a human genome. <em>Science</em>. 2022. doi:10.1126/science.abj6987 <a href="https://doi.org/10.1126/science.abj6987" rel="noopener">https://doi.org/10.1126/science.abj6987</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0038</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Centromere. The Genomics Dictionary. Entry GD-0038, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/centromere/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=centromere&amp;entry_id=GD-0038&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Short-read sequencing · The Genomics Dictionary</title>
+<meta name="description" content="Short-read sequencing reads DNA in small pieces, usually between about fifty and three hundred bases each, but reads enormous numbers of those pieces at once. Because each piece is short, software must work out where it came from by matching it against a reference sequence. The approach is accurate ">
+<meta property="og:title" content="Short-read sequencing · The Genomics Dictionary">
+<meta property="og:description" content="Short-read sequencing reads DNA in small pieces, usually between about fifty and three hundred bases each, but reads enormous numbers of those pieces at once. Because each piece is short, software must work out where it came from by matching it against a reference sequence. The approach is accurate ">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/short-read-sequencing/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Short-read sequencing", "description": "Short-read sequencing reads DNA in small pieces, usually between about fifty and three hundred bases each, but reads enormous numbers of those pieces at once. Because each piece is short, software must work out where it came from by matching it against a reference sequence. The approach is accurate per base and inexpensive per sample.", "identifier": "GD-0120", "url": "https://babasaraki.github.io/genomics-dictionary/terms/short-read-sequencing/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Short-read sequencing</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/sequencing-laboratory-methods/">Sequencing and laboratory methods</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Short-read sequencing reads DNA in small pieces, usually between about fifty and three hundred bases each, but reads enormous numbers of those pieces at once. Because each piece is short, software must work out where it came from by matching it against a reference sequence. The approach is accurate per base and inexpensive per sample.</p>
+
+        <h2>Technical explanation</h2>
+        <p>Short-read platforms fragment nucleic acid, attach adapters, and read each fragment from one or both ends to a fixed length set by the chemistry. Per-base accuracy is high and the cost per gigabase is low, which is why short reads underpin most population sequencing, exome and panel testing, RNA quantification and bacterial genomics. The analytical price is ambiguity of placement. A read shorter than a repeat unit cannot be assigned uniquely within that repeat, so mapping quality collapses in segmental duplications, long tandem arrays and paralogous gene families, and structural rearrangements are inferred indirectly from coverage changes and discordant read pairs rather than observed directly. Amplification during library preparation and cluster generation introduces duplicates and under-represents regions of extreme base composition, particularly those that are very GC-rich or GC-poor. Paired-end reads, longer inserts and linked-read or long-read supplementation each mitigate part of this, but none removes it. Reporting should therefore state read length, insert size and depth, since those parameters, not the platform name, determine which variant classes the experiment could have detected.</p>
+
+        <h2>Practical example</h2>
+        <p>A research group sequences tumour and matched blood samples to a high depth using short reads to call somatic single-nucleotide variants and small insertions and deletions. When the same data are used to look for a suspected large rearrangement, the evidence is indirect, and the group adds a long-read run on the remaining material to resolve the breakpoints.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>It is tempting to read high per-base accuracy as whole-genome completeness. The two are different. Short reads are individually accurate yet systematically blind to parts of the genome where they cannot be placed unambiguously, so a region can be absent from the results not because it is unchanged but because no read could be confidently mapped there.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/long-read-sequencing/">Long-read sequencing</a></li><li><a href="../../terms/read-mapping/">Read mapping</a></li><li><a href="../../terms/read-depth/">Read depth</a></li><li><a href="../../terms/coverage-breadth/">Breadth of coverage</a></li><li><a href="../../terms/paired-end-sequencing/">Paired-end sequencing</a></li><li><a href="../../terms/structural-variant/">Structural variant</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>DNA Sequencing — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/DNA-Sequencing" rel="noopener">https://www.genome.gov/genetics-glossary/DNA-Sequencing</a></li><li>Fast and accurate short read alignment with Burrows–Wheeler transform. <em>Bioinformatics</em>. 2009. doi:10.1093/bioinformatics/btp324 <a href="https://doi.org/10.1093/bioinformatics/btp324" rel="noopener">https://doi.org/10.1093/bioinformatics/btp324</a></li><li>Long-read human genome sequencing and its applications. <em>Nature Reviews Genetics</em>. 2020. doi:10.1038/s41576-020-0236-x <a href="https://doi.org/10.1038/s41576-020-0236-x" rel="noopener">https://doi.org/10.1038/s41576-020-0236-x</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0120</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Short-read sequencing. The Genomics Dictionary. Entry GD-0120, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/short-read-sequencing/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=short-read-sequencing&amp;entry_id=GD-0120&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Variant calling · The Genomics Dictionary</title>
+<meta name="description" content="Variant calling is the step that decides, from the reads piled up at each position of a genome, whether a sample differs from the reference and what its genotype is. The caller weighs the number of reads supporting each allele, their base and mapping qualities, and the expected behaviour of the sequ">
+<meta property="og:title" content="Variant calling · The Genomics Dictionary">
+<meta property="og:description" content="Variant calling is the step that decides, from the reads piled up at each position of a genome, whether a sample differs from the reference and what its genotype is. The caller weighs the number of reads supporting each allele, their base and mapping qualities, and the expected behaviour of the sequ">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/variant-calling/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Variant calling", "description": "Variant calling is the step that decides, from the reads piled up at each position of a genome, whether a sample differs from the reference and what its genotype is. The caller weighs the number of reads supporting each allele, their base and mapping qualities, and the expected behaviour of the sequencing technology, then emits the sites it judges to be real.", "identifier": "GD-0156", "url": "https://babasaraki.github.io/genomics-dictionary/terms/variant-calling/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Variant calling</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <a class="chip" href="../../subjects/clinical-cancer-genomics/">Clinical and cancer genomics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Variant calling is the step that decides, from the reads piled up at each position of a genome, whether a sample differs from the reference and what its genotype is. The caller weighs the number of reads supporting each allele, their base and mapping qualities, and the expected behaviour of the sequencing technology, then emits the sites it judges to be real.</p>
+
+        <h2>Technical explanation</h2>
+        <p>Most callers evaluate a probabilistic model of the read pileup, computing the likelihood of the observed bases under each candidate genotype and reporting the most probable one with a quality score. Haplotype-aware callers locally reassemble reads in active regions, which improves indel accuracy because mismatches near an indel are otherwise easily misaligned. Joint calling across a cohort shares information between samples and improves genotyping at low depth. Raw calls are then filtered, either by hard thresholds on depth, strand bias and quality, or by training a model on known variant sites. Performance differs sharply by variant class: single-nucleotide variants in unique sequence are called reliably at modest depth, whereas indels, repeat expansions and structural variants remain difficult, and copy-number and large rearrangements usually need dedicated tools. Somatic calling in tumour samples is harder still, because variants may be present in only a fraction of cells and must be distinguished from germline variants and sequencing noise, which is why a matched normal sample is used where possible.</p>
+
+        <h2>Practical example</h2>
+        <p>A sequencing service reports no variants in a gene of clinical interest for a research sample. Opening the alignment shows that the region has almost no coverage because of high GC content. The absence of calls reflects absence of data rather than absence of variation, so the laboratory reports the region as not assessable rather than negative.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>A variant call is often treated as a yes or no answer. It is a probabilistic inference from a limited number of reads, conditional on filters, on the reference build and on the caller&#x27;s model. The same sample analysed with a different pipeline will share most calls but not all, and disagreement concentrates in repeats and indels.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/variant-call-format/">Variant Call Format</a></li><li><a href="../../terms/variant-annotation/">Variant annotation</a></li><li><a href="../../terms/read-depth/">Read depth</a></li><li><a href="../../terms/sam-bam-format/">SAM and BAM formats</a></li><li><a href="../../terms/germline-variant/">Germline variant</a></li><li><a href="../../terms/somatic-variant/">Somatic variant</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>The Genome Analysis Toolkit: A MapReduce framework for analyzing next-generation DNA sequencing data. <em>Genome Research</em>. 2010. doi:10.1101/gr.107524.110 <a href="https://doi.org/10.1101/gr.107524.110" rel="noopener">https://doi.org/10.1101/gr.107524.110</a></li><li>Twelve years of SAMtools and BCFtools. <em>GigaScience</em>. 2021. doi:10.1093/gigascience/giab008 <a href="https://doi.org/10.1093/gigascience/giab008" rel="noopener">https://doi.org/10.1093/gigascience/giab008</a></li><li>Genomic Variation — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Genomic-Variation" rel="noopener">https://www.genome.gov/genetics-glossary/Genomic-Variation</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0156</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Variant calling. The Genomics Dictionary. Entry GD-0156, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/variant-calling/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=variant-calling&amp;entry_id=GD-0156&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

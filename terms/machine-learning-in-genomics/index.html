@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Machine learning in genomics · The Genomics Dictionary</title>
+<meta name="description" content="Machine learning covers methods that learn patterns from data rather than following rules written by a programmer. In genomics it is used to predict regulatory elements, classify tumours from molecular profiles, call variants, assign taxonomy to sequences and predict protein structure. A model is tr">
+<meta property="og:title" content="Machine learning in genomics · The Genomics Dictionary">
+<meta property="og:description" content="Machine learning covers methods that learn patterns from data rather than following rules written by a programmer. In genomics it is used to predict regulatory elements, classify tumours from molecular profiles, call variants, assign taxonomy to sequences and predict protein structure. A model is tr">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/machine-learning-in-genomics/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Machine learning in genomics", "description": "Machine learning covers methods that learn patterns from data rather than following rules written by a programmer. In genomics it is used to predict regulatory elements, classify tumours from molecular profiles, call variants, assign taxonomy to sequences and predict protein structure. A model is trained on examples with known answers, then evaluated on data it has never seen.", "identifier": "GD-0172", "url": "https://babasaraki.github.io/genomics-dictionary/terms/machine-learning-in-genomics/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Machine learning in genomics</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Machine learning covers methods that learn patterns from data rather than following rules written by a programmer. In genomics it is used to predict regulatory elements, classify tumours from molecular profiles, call variants, assign taxonomy to sequences and predict protein structure. A model is trained on examples with known answers, then evaluated on data it has never seen.</p>
+
+        <h2>Technical explanation</h2>
+        <p>Approaches range from regularised regression and tree ensembles, which remain strong on tabular data of modest size, to deep neural networks, which learn representations directly from sequence and have proven effective where large labelled datasets exist. Genomic applications pose characteristic difficulties. Datasets have far more features than samples, so regularisation and careful validation are essential. Observations are not independent: variants are correlated through linkage disequilibrium, sequences through shared ancestry, and samples through study site, so random splits leak information between training and test sets and produce optimistic estimates; splitting by chromosome, by taxonomic clade or by cohort is more honest. Labels are often noisy or incomplete, because the training data come from databases whose content reflects what has been studied. Training sets also under-represent many populations, so a model may perform worse for groups whose data are scarce, and that disparity is invisible unless performance is reported by group. Interpretability matters when a prediction informs a decision, and attribution methods give hints about what a model uses rather than a mechanism.</p>
+
+        <h2>Practical example</h2>
+        <p>A group builds a classifier to distinguish bacterial isolates that carry a resistance determinant from those that do not. Validating on isolates from the same hospital gives excellent accuracy, but performance drops when the model is applied to isolates from another country, because the original training set captured a narrow range of lineages.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>A model with high accuracy on a test set is often assumed to be ready for use. Accuracy measured on data resembling the training set says little about new settings, and in imbalanced problems a model can score well while failing on the rare class that matters. Evaluation on genuinely independent data is the minimum requirement.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/overfitting/">Overfitting</a></li><li><a href="../../terms/polygenic-risk-score/">Polygenic risk score</a></li><li><a href="../../terms/bioinformatics/">Bioinformatics</a></li><li><a href="../../terms/association-versus-causation/">Association versus causation</a></li><li><a href="../../terms/variant-annotation/">Variant annotation</a></li><li><a href="../../terms/sensitivity-and-specificity/">Sensitivity and specificity</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Deep learning: new computational modelling techniques for genomics. <em>Nature Reviews Genetics</em>. 2019. doi:10.1038/s41576-019-0122-6 <a href="https://doi.org/10.1038/s41576-019-0122-6" rel="noopener">https://doi.org/10.1038/s41576-019-0122-6</a></li><li>Highly accurate protein structure prediction with AlphaFold. <em>Nature</em>. 2021. doi:10.1038/s41586-021-03819-2 <a href="https://doi.org/10.1038/s41586-021-03819-2" rel="noopener">https://doi.org/10.1038/s41586-021-03819-2</a></li><li>Data Science — NHGRI Talking Glossary. <em>National Human Genome Research Institute</em>. <a href="https://www.genome.gov/genetics-glossary/Data-Science" rel="noopener">https://www.genome.gov/genetics-glossary/Data-Science</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0172</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Machine learning in genomics. The Genomics Dictionary. Entry GD-0172, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/machine-learning-in-genomics/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=machine-learning-in-genomics&amp;entry_id=GD-0172&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>

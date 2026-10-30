@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multiple testing correction · The Genomics Dictionary</title>
+<meta name="description" content="Multiple testing correction adjusts statistical results when many hypotheses are tested at once. If a threshold meant for a single test is applied to a million of them, a large number of apparently significant findings will arise purely by chance. Correction either raises the bar for significance or">
+<meta property="og:title" content="Multiple testing correction · The Genomics Dictionary">
+<meta property="og:description" content="Multiple testing correction adjusts statistical results when many hypotheses are tested at once. If a threshold meant for a single test is applied to a million of them, a large number of apparently significant findings will arise purely by chance. Correction either raises the bar for significance or">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://babasaraki.github.io/genomics-dictionary/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14532d">
+<link rel="canonical" href="https://babasaraki.github.io/genomics-dictionary/terms/multiple-testing-correction/">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/icon-180.png">
+<link rel="alternate icon" href="../../assets/img/icon-32.png" sizes="32x32">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Multiple testing correction", "description": "Multiple testing correction adjusts statistical results when many hypotheses are tested at once. If a threshold meant for a single test is applied to a million of them, a large number of apparently significant findings will arise purely by chance. Correction either raises the bar for significance or reinterprets the results so that the expected number of false findings is controlled.", "identifier": "GD-0162", "url": "https://babasaraki.github.io/genomics-dictionary/terms/multiple-testing-correction/", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "The Genomics Dictionary", "url": "https://babasaraki.github.io/genomics-dictionary"}}</script>
+</head>
+<body data-root="../../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/img/logo.svg" alt="" aria-hidden="true" width="30" height="30">
+      <span>The Genomics Dictionary</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Open navigation menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="../../dictionary/">Dictionary</a></li>
+        <li><a href="../../subjects/">Browse subjects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contribute/">Contribute</a></li>
+        <li><a class="donate-link" href="../../donate/">Donate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container narrow">
+    
+    <article class="term">
+      <header class="term-head">
+        <h1>Multiple testing correction</h1>
+        
+        <p class="entry-meta"><a class="chip" href="../../subjects/bioinformatics-statistics/">Bioinformatics and statistics</a> <span class="chip chip-published">Published</span></p>
+      </header>
+      <div class="term-sections">
+        <h2>Definition</h2>
+        <p class="definition">Multiple testing correction adjusts statistical results when many hypotheses are tested at once. If a threshold meant for a single test is applied to a million of them, a large number of apparently significant findings will arise purely by chance. Correction either raises the bar for significance or reinterprets the results so that the expected number of false findings is controlled.</p>
+
+        <h2>Technical explanation</h2>
+        <p>Two broad aims exist. Family-wise error rate control limits the probability of even one false positive across the whole set; the Bonferroni adjustment, dividing the threshold by the number of tests, is the simplest and most conservative instance, and the genome-wide significance threshold conventionally used in association studies derives from this logic applied to the number of effectively independent common variants. False discovery rate control instead limits the expected proportion of false positives among the findings declared significant, which is far more powerful when thousands of true effects are plausible, as in expression analysis. The choice is a scientific one: family-wise control suits a setting where a single false claim is costly, false discovery rate control suits screening where a ranked candidate list will be followed up. Correction assumes the tests were specified before looking at the data; applying it after selecting promising comparisons, or correcting only within a subset while reporting across many subsets, understates the true multiplicity. Correlation between tests, as from linkage disequilibrium or co-expression, makes simple corrections conservative.</p>
+
+        <h2>Practical example</h2>
+        <p>A differential expression analysis of twenty thousand genes returns nine hundred genes with an uncorrected p-value below 0.05, when about a thousand would be expected by chance alone if nothing were differentially expressed. After false discovery rate adjustment, forty genes remain below a five per cent threshold, and these form the shortlist taken forward for validation.</p>
+
+        <h2>Common misunderstanding</h2>
+        <p>Correction is often seen as a statistical penalty that hides real findings. It does not remove true signal; it calibrates the claim being made, so that a list of results carries a stated error rate. The genuine problem is the opposite habit: testing many hypotheses, reporting the striking ones, and correcting for only those that were reported.</p>
+
+        <h2>Related concepts</h2>
+        <ul class="related-list"><li><a href="../../terms/false-discovery-rate/">False discovery rate</a></li><li><a href="../../terms/p-value/">P value</a></li><li><a href="../../terms/differential-expression/">Differential expression</a></li><li><a href="../../terms/genome-wide-association-study/">Genome-wide association study</a></li><li><a href="../../terms/association-versus-causation/">Association versus causation</a></li><li><a href="../../terms/overfitting/">Overfitting</a></li></ul>
+
+        <h2>References</h2>
+        <ol class="ref-list"><li>Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing. <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>. 1995. doi:10.1111/j.2517-6161.1995.tb02031.x <a href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x" rel="noopener">https://doi.org/10.1111/j.2517-6161.1995.tb02031.x</a></li><li>The ASA Statement on p -Values: Context, Process, and Purpose. <em>The American Statistician</em>. 2016. doi:10.1080/00031305.2016.1154108 <a href="https://doi.org/10.1080/00031305.2016.1154108" rel="noopener">https://doi.org/10.1080/00031305.2016.1154108</a></li><li>10 Years of GWAS Discovery: Biology, Function, and Translation. <em>The American Journal of Human Genetics</em>. 2017. doi:10.1016/j.ajhg.2017.06.005 <a href="https://doi.org/10.1016/j.ajhg.2017.06.005" rel="noopener">https://doi.org/10.1016/j.ajhg.2017.06.005</a></li></ol>
+        <p class="hint">A source link records what the entry drew on. It is not evidence that the entry has
+        been scientifically reviewed; review is recorded separately below.</p>
+
+        <h2>Entry record</h2>
+        <table class="meta-table">
+          <tr><th scope="row">Entry identifier</th><td>GD-0162</td></tr>
+          <tr><th scope="row">Revision</th><td>1</td></tr>
+          <tr><th scope="row">Editorial state</th><td>Published</td></tr>
+          <tr><th scope="row">Contributor</th><td>AI-assisted draft</td></tr>
+          <tr><th scope="row">Scientific reviewer</th><td>Dr Umar Ahmad</td></tr>
+          <tr><th scope="row">Last scientific review</th><td>2026-10-30</td></tr>
+          <tr><th scope="row">Next review due</th><td>2027-10-30</td></tr>
+          <tr><th scope="row">Created</th><td>2026-10-25</td></tr>
+          <tr><th scope="row">Last updated</th><td>2026-10-30</td></tr>
+        </table>
+
+        <h2>Suggested citation</h2>
+        <p class="citation">Multiple testing correction. The Genomics Dictionary. Entry GD-0162, revision 1, Published. Updated 2026-10-30. https://babasaraki.github.io/genomics-dictionary/terms/multiple-testing-correction/</p>
+
+        <div class="term-actions no-print">
+          <button type="button" class="btn btn-secondary btn-small" data-copy-link>Copy link</button>
+          <button type="button" class="btn btn-secondary btn-small" data-print>Print this entry</button>
+          <a class="btn btn-secondary btn-small" href="../../report-error/?term=multiple-testing-correction&amp;entry_id=GD-0162&amp;revision=1">Report an error</a>
+          <a class="btn btn-secondary btn-small" href="../../dictionary/">Back to all entries</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>The dictionary</h2>
+        <ul>
+          <li><a href="../../dictionary/">All entries</a></li>
+          <li><a href="../../subjects/">Browse subjects</a></li>
+          <li><a href="../../contribute/#suggest">Suggest a term</a></li>
+          <li><a href="../../report-error/">Report an error</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../donate/">Support the dictionary</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="../../policies/editorial/">Editorial policy</a></li>
+          <li><a href="../../policies/privacy/">Privacy</a></li>
+          <li><a href="../../policies/reuse/">Terms and reuse</a></li>
+          <li><a href="../../policies/accessibility/">Accessibility</a></li>
+          <li><a href="../../policies/donation-information/">Donation information</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">&copy; <span id="year">2026</span> Dr Umar Ahmad &middot; The Genomics Dictionary &middot;
+    Entries are explanatory material, not clinical advice. Content last updated 2026-10-30.</p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+</body>
+</html>
